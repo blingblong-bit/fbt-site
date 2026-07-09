@@ -102,3 +102,32 @@
     color: var(--color-primary);
   }
 }
+
+/* Diamond mark — rotated square used as bullet/badge, tied to the FBT logo */
+@utility diamond-badge {
+  display: inline-grid;
+  place-items: center;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+@utility diamond-badge-inner {
+  transform: rotate(-45deg);
+}
+
+/* Diagonal section edge — subtle clipped bottom */
+@utility clip-diagonal-b {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+@utility clip-diagonal-t {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Stat number — heavy athletic display treatment */
+@utility stat-number {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+

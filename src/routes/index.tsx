@@ -27,11 +27,12 @@ function Home() {
       <ProblemGap />
       <Services />
       <ForceDecks />
-      <DoctorReferral />
       <Results />
       <About />
+      <DoctorReferral />
       <FitBeyondPlus />
       <FAQ />
+
       <FinalCTA />
     </>
   );

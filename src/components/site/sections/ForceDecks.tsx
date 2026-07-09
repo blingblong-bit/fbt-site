@@ -22,31 +22,24 @@ export function ForceDecks() {
           </p>
 
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-8">
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Data points captured
-              </dt>
-              <dd className="mt-1 font-display text-3xl font-bold text-primary">40+</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Assessment time
-              </dt>
-              <dd className="mt-1 font-display text-3xl font-bold text-primary">~45 min</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Asymmetry threshold
-              </dt>
-              <dd className="mt-1 font-display text-3xl font-bold text-primary">&lt; 10%</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Reassess every
-              </dt>
-              <dd className="mt-1 font-display text-3xl font-bold text-primary">6–8 wks</dd>
-            </div>
+            {[
+              { t: "Data points captured", n: "40+" },
+              { t: "Assessment time", n: "~45 min" },
+              { t: "Asymmetry threshold", n: "<10%" },
+              { t: "Reassess every", n: "6–8 wks" },
+            ].map((item) => (
+              <div key={item.t} className="flex items-start gap-3">
+                <span aria-hidden className="mt-2 h-2.5 w-2.5 shrink-0 rotate-45 bg-accent" />
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {item.t}
+                  </dt>
+                  <dd className="stat-number mt-2 text-4xl text-primary sm:text-5xl">{item.n}</dd>
+                </div>
+              </div>
+            ))}
           </dl>
+
         </div>
 
         <div>

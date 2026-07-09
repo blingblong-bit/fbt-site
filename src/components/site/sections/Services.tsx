@@ -56,9 +56,10 @@ export function Services({ heading = true }: { heading?: boolean }) {
               key={s.title}
               className="group flex flex-col rounded-2xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-elevated"
             >
-              <div className="grid h-11 w-11 place-items-center rounded-lg bg-primary font-mono text-sm font-bold text-primary-foreground">
-                {s.icon}
+              <div className="grid h-11 w-11 rotate-45 place-items-center rounded-lg bg-primary font-mono text-sm font-bold text-primary-foreground shadow-sm">
+                <span className="-rotate-45">{s.icon}</span>
               </div>
+
               <h3 className="mt-5 text-xl font-bold">{s.title}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-foreground/75">{s.body}</p>
             </article>
