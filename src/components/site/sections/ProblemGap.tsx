@@ -1,10 +1,11 @@
 import { Reveal } from "../Reveal";
 import { BackdropImage } from "../BackdropImage";
+import bgPhoto from "@/assets/resistance-step.jpg.asset.json";
 
 export function ProblemGap() {
   return (
     <section className="relative bg-background text-primary-foreground">
-      <BackdropImage label="client bridging rehab to strength, wide shot" overlay="soft" />
+      <BackdropImage label="client bridging rehab to strength" overlay="soft" src={bgPhoto.url} />
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <Reveal className="max-w-3xl">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-secondary-foreground">

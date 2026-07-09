@@ -2,11 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Reveal } from "../Reveal";
 import { BackdropImage } from "../BackdropImage";
+import bgPhoto from "@/assets/wallball-training.jpg.asset.json";
+import inlinePhoto from "@/assets/coach-guided-training.jpg.asset.json";
 
 export function DoctorReferral() {
   return (
     <section id="referrals" className="relative bg-primary text-primary-foreground">
-      <BackdropImage label="clinical consultation or physician handoff" overlay="primary" />
+      <BackdropImage label="clinical consultation" overlay="primary" src={bgPhoto.url} />
       <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8 lg:py-28">
         <Reveal className="lg:col-span-7">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
@@ -52,9 +54,10 @@ export function DoctorReferral() {
 
         <Reveal delay={120} className="lg:col-span-5">
           <PlaceholderImage
-            label="clinical-credibility.jpg — coach reviewing assessment with client"
+            label="Coach reviewing guided training with a client"
             aspect="aspect-[4/5]"
             tone="dark"
+            src={inlinePhoto.url}
           />
         </Reveal>
       </div>
