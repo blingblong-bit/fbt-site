@@ -22,7 +22,7 @@ export function SiteNav() {
           : "border-transparent bg-background/70 backdrop-blur"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
+      <div className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? "py-2" : "py-3.5"}`}>
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <span className="grid h-9 w-9 place-items-center rounded-md bg-[var(--secondary-foreground)] font-display text-primary-foreground font-bold">
             F
