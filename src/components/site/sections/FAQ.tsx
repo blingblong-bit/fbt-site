@@ -39,7 +39,7 @@ export function FAQ() {
             <details key={f.q} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-start justify-between gap-6 font-display text-lg font-semibold text-foreground">
                 {f.q}
-                <span className="mt-1 grid h-5 w-5 shrink-0 rotate-45 place-items-center rounded-[4px] border border-primary/40 bg-primary/5 text-primary transition-transform group-open:rotate-[135deg]">
+                <span className="mt-1 grid h-5 w-5 shrink-0 rotate-45 place-items-center rounded-[4px] border border-[var(--secondary-foreground)]/40 bg-[var(--secondary-foreground)]/5 text-[var(--secondary-foreground)] transition-transform group-open:rotate-[135deg]">
                   <span className="-rotate-45 text-xs font-bold leading-none">+</span>
                 </span>
               </summary>

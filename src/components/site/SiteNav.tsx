@@ -15,10 +15,10 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-primary font-display text-primary-foreground font-bold">
+          <span className="grid h-9 w-9 place-items-center rounded-md bg-[var(--secondary-foreground)] font-display text-primary-foreground font-bold">
             F
           </span>
-          <span className="font-display text-base font-bold tracking-tight text-primary sm:text-lg">
+          <span className="font-display text-base font-bold tracking-tight text-[var(--secondary-foreground)] sm:text-lg">
             FIT Beyond Therapy
           </span>
         </Link>
