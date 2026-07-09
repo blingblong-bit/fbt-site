@@ -1,12 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Reveal } from "../Reveal";
-
+import { BackdropImage } from "../BackdropImage";
 
 export function DoctorReferral() {
   return (
-    <section id="referrals" className="bg-primary text-primary-foreground">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8 lg:py-28">
+    <section id="referrals" className="relative bg-primary text-primary-foreground">
+      <BackdropImage label="clinical consultation or physician handoff" overlay="primary" />
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8 lg:py-28">
         <Reveal className="lg:col-span-7">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             Physician Partnership

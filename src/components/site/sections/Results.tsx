@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { Reveal } from "../Reveal";
 import { CountUp } from "../CountUp";
+import { BackdropImage } from "../BackdropImage";
 
 const STATS = [
   { n: "94%", l: "of clients return to full activity" },
@@ -73,15 +74,16 @@ export function Results() {
 
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
+      <BackdropImage label="athlete training session, wide shot" overlay="primary" />
       <div
-        aria-hidden
+        aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rotate-45 rounded-3xl border border-primary-foreground/10"
       />
       <div
-        aria-hidden
+        aria-hidden="true"
         className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rotate-45 rounded-3xl border border-primary-foreground/10"
       />
-      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <Reveal className="max-w-3xl">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             Results & Referrals
