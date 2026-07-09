@@ -56,6 +56,7 @@ export function DoctorReferral() {
             tone="dark"
           />
         </Reveal>
+      </div>
     </section>
   );
 }
