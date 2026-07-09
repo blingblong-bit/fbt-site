@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { useScrollY } from "@/hooks/useScrollY";
+import heroPhoto from "@/assets/training-coach-senior.jpg.asset.json";
 
 export function Hero() {
   const y = useScrollY();
@@ -69,9 +70,10 @@ export function Hero() {
             className="pointer-events-none absolute -bottom-6 -right-6 -z-0 h-32 w-32 rotate-45 rounded-xl bg-primary/10"
           />
           <PlaceholderImage
-            label="hero-training-photo.jpg — client training with coach on gym floor"
+            label="Coach guiding a client through resisted balance training"
             aspect="aspect-[5/4]"
             className="relative z-10 shadow-elevated"
+            src={heroPhoto.url}
           />
         </div>
       </div>

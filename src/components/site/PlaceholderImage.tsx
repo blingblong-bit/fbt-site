@@ -1,21 +1,31 @@
 interface PlaceholderImageProps {
   label: string;
-  aspect?: string; // e.g. "aspect-[4/3]", "aspect-video", "aspect-square"
+  aspect?: string;
   className?: string;
   tone?: "light" | "dark";
+  src?: string;
 }
 
 /**
- * Labeled placeholder block used everywhere on the site until real photography is provided.
- * Renders a neutral gray card with the filename/label so photos can be swapped in
- * without touching layout.
+ * Labeled placeholder block. When `src` is provided, renders the actual photo
+ * with the same container/aspect so layout stays identical when photos are swapped in.
  */
 export function PlaceholderImage({
   label,
   aspect = "aspect-[4/3]",
   className = "",
   tone = "light",
+  src,
 }: PlaceholderImageProps) {
+  if (src) {
+    return (
+      <div
+        className={`relative ${aspect} w-full overflow-hidden rounded-2xl border border-border ${className}`}
+      >
+        <img src={src} alt={label} className="absolute inset-0 h-full w-full object-cover" />
+      </div>
+    );
+  }
   const bg = tone === "dark" ? "bg-primary/90 text-primary-foreground" : "bg-surface-strong text-muted-foreground";
   return (
     <div
