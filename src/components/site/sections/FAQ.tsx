@@ -37,14 +37,15 @@ export function FAQ() {
         <div className="mt-12 divide-y divide-border rounded-2xl border border-border bg-card shadow-card">
           {FAQS.map((f) => (
             <details key={f.q} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex cursor-pointer items-start justify-between gap-6 font-display text-lg font-semibold text-primary">
+              <summary className="flex cursor-pointer items-start justify-between gap-6 font-display text-lg font-semibold text-foreground">
                 {f.q}
-                <span className="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full border border-border text-primary transition-transform group-open:rotate-45">
-                  +
+                <span className="mt-1 grid h-5 w-5 shrink-0 rotate-45 place-items-center rounded-[4px] border border-primary/40 bg-primary/5 text-primary transition-transform group-open:rotate-[135deg]">
+                  <span className="-rotate-45 text-xs font-bold leading-none">+</span>
                 </span>
               </summary>
               <p className="mt-4 text-foreground/80">{f.a}</p>
             </details>
+
           ))}
         </div>
       </div>
