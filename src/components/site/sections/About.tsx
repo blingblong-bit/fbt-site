@@ -1,17 +1,18 @@
 import { PlaceholderImage } from "../PlaceholderImage";
+import { Reveal } from "../Reveal";
 
 export function About() {
   return (
     <section id="about" className="bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-28">
-        <div className="lg:col-span-5">
+        <Reveal className="lg:col-span-5">
           <PlaceholderImage
             label="staff-team-photo.jpg — head coach + team on the training floor"
             aspect="aspect-[4/5]"
             className="shadow-elevated"
           />
-        </div>
-        <div className="lg:col-span-7">
+        </Reveal>
+        <Reveal delay={120} className="lg:col-span-7">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             About FIT Beyond Therapy
           </p>

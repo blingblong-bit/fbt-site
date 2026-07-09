@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
+import { Reveal } from "../Reveal";
+
 
 export function DoctorReferral() {
   return (
     <section id="referrals" className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8 lg:py-28">
-        <div className="lg:col-span-7">
+        <Reveal className="lg:col-span-7">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             Physician Partnership
           </p>
@@ -45,16 +47,16 @@ export function DoctorReferral() {
               Start a referral conversation →
             </Link>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="lg:col-span-5">
+        <Reveal delay={120} className="lg:col-span-5">
           <PlaceholderImage
             label="clinical-credibility.jpg — coach reviewing assessment with client"
             aspect="aspect-[4/5]"
             tone="dark"
           />
         </div>
-      </div>
+        </Reveal>
     </section>
   );
 }
