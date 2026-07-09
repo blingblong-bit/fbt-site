@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { PlaceholderImage } from "./PlaceholderImage";
+import { PlaceholderImage } from "../PlaceholderImage";
 
 export function Hero() {
   return (
