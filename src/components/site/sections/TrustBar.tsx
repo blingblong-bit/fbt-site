@@ -1,4 +1,6 @@
 import { Reveal } from "../Reveal";
+
+const ITEMS = [
   "Physician Referred",
   "ForceDecks Data-Backed",
   "10+ Years Serving Tullahoma",
