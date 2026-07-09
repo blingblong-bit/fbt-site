@@ -1,3 +1,5 @@
+import { Reveal } from "../Reveal";
+
 const FAQS = [
   {
     q: "Do I need a physician referral?",
@@ -25,18 +27,19 @@ export function FAQ() {
   return (
     <section id="faq" className="bg-background">
       <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-        <div className="text-center">
+
+        <Reveal className="text-center">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             FAQ
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
             Common questions.
           </h2>
-        </div>
+        </Reveal>
 
         <div className="mt-12 divide-y divide-border rounded-2xl border border-border bg-card shadow-card">
-          {FAQS.map((f) => (
-            <details key={f.q} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
+          {FAQS.map((f, i) => (
+            <Reveal as="details" key={f.q} delay={i * 60} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-start justify-between gap-6 font-display text-lg font-semibold text-foreground">
                 {f.q}
                 <span className="mt-1 grid h-5 w-5 shrink-0 rotate-45 place-items-center rounded-[4px] border border-[var(--secondary-foreground)]/40 bg-[var(--secondary-foreground)]/5 text-[var(--secondary-foreground)] transition-transform group-open:rotate-[135deg]">
@@ -44,7 +47,7 @@ export function FAQ() {
                 </span>
               </summary>
               <p className="mt-4 text-foreground/80">{f.a}</p>
-            </details>
+            </Reveal>
 
           ))}
         </div>
