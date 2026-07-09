@@ -49,7 +49,7 @@ export function About() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

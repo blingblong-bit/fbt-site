@@ -55,7 +55,6 @@ export function DoctorReferral() {
             aspect="aspect-[4/5]"
             tone="dark"
           />
-        </div>
         </Reveal>
     </section>
   );
