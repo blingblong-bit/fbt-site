@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useScrollY } from "@/hooks/useScrollY";
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },
@@ -11,8 +12,16 @@ const NAV_LINKS = [
 ] as const;
 
 export function SiteNav() {
+  const y = useScrollY();
+  const scrolled = y > 40;
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/85 backdrop-blur">
+    <header
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
+        scrolled
+          ? "border-border/80 bg-background/85 shadow-card backdrop-blur-md"
+          : "border-transparent bg-background/70 backdrop-blur"
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <span className="grid h-9 w-9 place-items-center rounded-md bg-[var(--secondary-foreground)] font-display text-primary-foreground font-bold">

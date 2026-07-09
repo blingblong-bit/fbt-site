@@ -1,23 +1,32 @@
 import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
+import { useScrollY } from "@/hooks/useScrollY";
 
 export function Hero() {
+  const y = useScrollY();
+  const slow = { transform: `translateY(${y * 0.15}px)` };
+  const slower = { transform: `translateY(${y * 0.08}px)` };
+  const slowest = { transform: `translateY(${y * 0.22}px)` };
+
   return (
     <section className="clip-diagonal-b relative overflow-hidden bg-background pb-16 lg:pb-24">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_100%_0%,oklch(0.5_0.21_258/0.08),transparent_60%)]" />
 
-      {/* Diamond motif accents */}
+      {/* Diamond motif accents — parallax */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-24 top-24 h-72 w-72 rotate-45 rounded-3xl border border-primary/15 bg-primary/[0.03]"
+        style={slow}
+        className="pointer-events-none absolute -right-24 top-24 h-72 w-72 rotate-45 rounded-3xl border border-primary/15 bg-primary/[0.03] will-change-transform"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute right-40 top-8 hidden h-24 w-24 rotate-45 rounded-lg border border-accent/20 lg:block"
+        style={slowest}
+        className="pointer-events-none absolute right-40 top-8 hidden h-24 w-24 rotate-45 rounded-lg border border-accent/20 will-change-transform lg:block"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-16 bottom-24 hidden h-40 w-40 rotate-45 rounded-2xl border border-primary/10 lg:block"
+        style={slower}
+        className="pointer-events-none absolute -left-16 bottom-24 hidden h-40 w-40 rotate-45 rounded-2xl border border-primary/10 will-change-transform lg:block"
       />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8 lg:py-24">
