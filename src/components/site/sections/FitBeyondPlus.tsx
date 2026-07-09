@@ -1,8 +1,10 @@
+import { Reveal } from "../Reveal";
+
 export function FitBeyondPlus() {
   return (
     <section className="bg-surface-strong">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-start gap-6 rounded-3xl border border-border bg-card p-8 shadow-card md:flex-row md:items-center md:justify-between md:p-10">
+        <Reveal className="flex flex-col items-start gap-6 rounded-3xl border border-border bg-card p-8 shadow-card md:flex-row md:items-center md:justify-between md:p-10">
           <div className="max-w-2xl">
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
               Connected to FIT Beyond Plus
@@ -22,7 +24,7 @@ export function FitBeyondPlus() {
           >
             Visit FIT Beyond Plus →
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
