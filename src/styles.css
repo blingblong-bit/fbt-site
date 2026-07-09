@@ -57,20 +57,20 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.03 250);
 
-  /* Primary: deep navy */
-  --primary: oklch(0.28 0.06 255);
-  --primary-hover: oklch(0.34 0.07 255);
+  /* Primary: bold brand blue (matches FIT Beyond Plus branding) */
+  --primary: oklch(0.5 0.21 258);
+  --primary-hover: oklch(0.44 0.21 258);
   --primary-foreground: oklch(0.99 0.002 250);
 
   --secondary: oklch(0.955 0.008 250);
-  --secondary-foreground: oklch(0.28 0.06 255);
+  --secondary-foreground: oklch(0.5 0.21 258);
 
   --muted: oklch(0.96 0.006 250);
   --muted-foreground: oklch(0.5 0.02 250);
 
-  /* Accent: energetic orange for CTAs */
-  --accent: oklch(0.68 0.19 45);
-  --accent-hover: oklch(0.62 0.2 42);
+  /* Accent: black, used for CTAs and strong contrast elements */
+  --accent: oklch(0.17 0.005 260);
+  --accent-hover: oklch(0.27 0.008 260);
   --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
@@ -78,7 +78,7 @@
 
   --border: oklch(0.9 0.008 250);
   --input: oklch(0.9 0.008 250);
-  --ring: oklch(0.28 0.06 255);
+  --ring: oklch(0.5 0.21 258);
 }
 
 @layer base {
