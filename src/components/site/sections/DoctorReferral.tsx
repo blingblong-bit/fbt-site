@@ -4,7 +4,7 @@ import { Reveal } from "../Reveal";
 import { BackdropImage } from "../BackdropImage";
 import { photos } from "@/assets/photos";
 
-export function DoctorReferral() {
+export function DoctorReferral({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" }) {
   return (
     <section id="referrals" className="relative bg-primary text-primary-foreground">
       <BackdropImage label="clinical consultation" overlay="primary" src={photos.doctorReferralBackdrop} />
@@ -13,9 +13,9 @@ export function DoctorReferral() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             Physician Partnership
           </p>
-          <h2 className="mt-3 text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
+          <TitleTag className="mt-3 text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
             Trusted by Local Physicians.
-          </h2>
+          </TitleTag>
           <p className="mt-6 max-w-2xl text-lg text-primary-foreground/80">
             Many of our clients come to us on a physician's recommendation as the next step
             after physical therapy. Ask your PT or physician about a referral to FIT Beyond

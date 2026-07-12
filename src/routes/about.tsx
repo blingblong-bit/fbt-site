@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { About } from "@/components/site/sections/About";
 import { FitBeyondPlus } from "@/components/site/sections/FitBeyondPlus";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
@@ -18,9 +19,9 @@ export const Route = createFileRoute("/about")({
         content:
           "Built by coaches who take the clinical side seriously. Post-rehab strength and performance in Tullahoma, TN.",
       },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: absoluteUrl("/about") },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/about") }],
   }),
   component: AboutPage,
 });
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <>
-      <About />
+      <About titleTag="h1" />
       <FitBeyondPlus />
       <FinalCTA />
     </>

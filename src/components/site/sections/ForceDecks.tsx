@@ -19,7 +19,7 @@ const asymmetry = Math.round(
   ((SAMPLE[1].force - SAMPLE[0].force) / SAMPLE[1].force) * 100,
 );
 
-export function ForceDecks() {
+export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" }) {
   return (
     <section id="forcedecks" className="bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
@@ -27,9 +27,9 @@ export function ForceDecks() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             ForceDecks · Force Plate Assessment
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
+          <TitleTag className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
             We Don't Guess. We Measure.
-          </h2>
+          </TitleTag>
           <div className="mt-6 inline-flex items-center gap-3 rounded-lg bg-accent px-4 py-2.5 shadow-sm">
             <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accent-foreground/70">
               Powered by

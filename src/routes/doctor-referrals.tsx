@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { DoctorReferral } from "@/components/site/sections/DoctorReferral";
 import { ContactForm } from "@/components/site/ContactForm";
 
@@ -16,9 +17,9 @@ export const Route = createFileRoute("/doctor-referrals")({
         property: "og:description",
         content: "Physician-referred post-rehab strength training in Tullahoma, TN.",
       },
-      { property: "og:url", content: "/doctor-referrals" },
+      { property: "og:url", content: absoluteUrl("/doctor-referrals") },
     ],
-    links: [{ rel: "canonical", href: "/doctor-referrals" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/doctor-referrals") }],
   }),
   component: DoctorReferralsPage,
 });
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/doctor-referrals")({
 function DoctorReferralsPage() {
   return (
     <>
-      <DoctorReferral />
+      <DoctorReferral titleTag="h1" />
       <section className="bg-background">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-5 lg:px-8">
           <div className="lg:col-span-2">

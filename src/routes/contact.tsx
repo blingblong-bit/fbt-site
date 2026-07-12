@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { ContactForm } from "@/components/site/ContactForm";
 
 export const Route = createFileRoute("/contact")({
@@ -15,9 +16,9 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Schedule an assessment in Tullahoma, TN. Physician-referred welcome.",
       },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: absoluteUrl("/contact") },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
   }),
   component: ContactPage,
 });

@@ -113,7 +113,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
+          "@id": "https://fitbeyondtherapy.com/#business",
           name: "FIT Beyond Therapy",
+          url: "https://fitbeyondtherapy.com",
           description:
             "Post-rehab strength training and athletic performance in Tullahoma, TN.",
           telephone: "+1-931-555-0100",

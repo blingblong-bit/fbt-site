@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { PlaceholderImage } from "@/components/site/PlaceholderImage";
 import { photos } from "@/assets/photos";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
@@ -17,9 +18,9 @@ export const Route = createFileRoute("/athletic-performance")({
         property: "og:description",
         content: "Speed, power, and durability for youth and competitive athletes in Tullahoma, TN.",
       },
-      { property: "og:url", content: "/athletic-performance" },
+      { property: "og:url", content: absoluteUrl("/athletic-performance") },
     ],
-    links: [{ rel: "canonical", href: "/athletic-performance" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/athletic-performance") }],
   }),
   component: AthleticPerformancePage,
 });

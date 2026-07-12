@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { ForceDecks } from "@/components/site/sections/ForceDecks";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 import { FAQ } from "@/components/site/sections/FAQ";
@@ -14,9 +15,9 @@ export const Route = createFileRoute("/forcedecks")({
       },
       { property: "og:title", content: "ForceDecks Assessment | FIT Beyond Therapy" },
       { property: "og:description", content: "We don't guess. We measure. Force plate assessments in Tullahoma, TN." },
-      { property: "og:url", content: "/forcedecks" },
+      { property: "og:url", content: absoluteUrl("/forcedecks") },
     ],
-    links: [{ rel: "canonical", href: "/forcedecks" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/forcedecks") }],
   }),
   component: ForceDecksPage,
 });
@@ -24,7 +25,7 @@ export const Route = createFileRoute("/forcedecks")({
 function ForceDecksPage() {
   return (
     <>
-      <ForceDecks />
+      <ForceDecks titleTag="h1" />
       <FAQ />
       <FinalCTA />
     </>

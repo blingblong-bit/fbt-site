@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { Hero } from "@/components/site/sections/Hero";
 import { TrustBar } from "@/components/site/sections/TrustBar";
 import { ProblemGap } from "@/components/site/sections/ProblemGap";
@@ -13,8 +14,8 @@ import { FinalCTA } from "@/components/site/sections/FinalCTA";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    links: [{ rel: "canonical", href: "/" }],
-    meta: [{ property: "og:url", content: "/" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/") }],
+    meta: [{ property: "og:url", content: absoluteUrl("/") }],
   }),
   component: Home,
 });

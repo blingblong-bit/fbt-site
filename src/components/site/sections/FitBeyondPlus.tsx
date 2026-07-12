@@ -9,9 +9,9 @@ export function FitBeyondPlus() {
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
               Connected to FIT Beyond Plus
             </p>
-            <h3 className="mt-2 font-display text-2xl font-bold sm:text-3xl">
+            <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">
               A gym floor waiting when your program is done.
-            </h3>
+            </h2>
             <p className="mt-3 text-foreground/75">
               When you graduate from your FBT program, FIT Beyond Plus is right here — same
               address, same standards — for ongoing strength and general fitness memberships.

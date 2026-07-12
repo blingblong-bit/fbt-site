@@ -1,7 +1,7 @@
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Reveal } from "../Reveal";
 
-export function About() {
+export function About({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" }) {
   return (
     <section id="about" className="bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-28">
@@ -16,9 +16,9 @@ export function About() {
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
             About FIT Beyond Therapy
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
+          <TitleTag className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
             Built by coaches who take the clinical side seriously.
-          </h2>
+          </TitleTag>
           <div className="mt-8 space-y-5 text-lg text-foreground/80">
             <p>
               FIT Beyond Therapy was founded to close a gap our head coach kept seeing: clients

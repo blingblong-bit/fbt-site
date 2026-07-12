@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { Services } from "@/components/site/sections/Services";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 
@@ -13,9 +14,9 @@ export const Route = createFileRoute("/services")({
       },
       { property: "og:title", content: "Services | FIT Beyond Therapy" },
       { property: "og:description", content: "Assessment-driven training programs in Tullahoma, TN." },
-      { property: "og:url", content: "/services" },
+      { property: "og:url", content: absoluteUrl("/services") },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/services") }],
   }),
   component: ServicesPage,
 });
