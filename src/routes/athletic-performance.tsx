@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "@/components/site/PlaceholderImage";
+import { photos } from "@/assets/photos";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 
 export const Route = createFileRoute("/athletic-performance")({
@@ -57,9 +58,10 @@ function AthleticPerformancePage() {
             </div>
           </div>
           <PlaceholderImage
-            label="athlete-training.jpg — young athlete performing a sprint or jump on the training floor"
+            label="Athlete training on the FIT Beyond Therapy floor"
             aspect="aspect-[4/5]"
             className="shadow-elevated"
+            src={photos.athleticPerformance}
           />
         </div>
       </section>

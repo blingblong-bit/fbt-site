@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Reveal } from "../Reveal";
 import { CountUp } from "../CountUp";
 import { BackdropImage } from "../BackdropImage";
-import bgPhoto from "@/assets/wallball-training.jpg.asset.json";
+import { photos } from "@/assets/photos";
 
 const STATS = [
   { n: "94%", l: "of clients return to full activity" },
@@ -75,7 +75,7 @@ export function Results() {
 
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
-      <BackdropImage label="athlete training session" overlay="primary" src={bgPhoto.url} />
+      <BackdropImage label="athlete training session" overlay="primary" src={photos.resultsBackdrop} />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rotate-45 rounded-3xl border border-primary-foreground/10"
