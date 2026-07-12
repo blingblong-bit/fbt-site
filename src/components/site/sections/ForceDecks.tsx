@@ -1,5 +1,14 @@
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, Cell } from "recharts";
 import { Reveal } from "../Reveal";
+import { AsymmetryIcon, BalanceIcon, StrengthIcon, PowerIcon } from "../ValdIcons";
+import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
+
+const METRICS = [
+  { label: "Asymmetry", Icon: AsymmetryIcon },
+  { label: "Balance", Icon: BalanceIcon },
+  { label: "Strength", Icon: StrengthIcon },
+  { label: "Power", Icon: PowerIcon },
+];
 
 const SAMPLE = [
   { leg: "Left Leg", force: 1420, fill: "oklch(0.5 0.21 258)" },
@@ -21,6 +30,16 @@ export function ForceDecks() {
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
             We Don't Guess. We Measure.
           </h2>
+          <div className="mt-6 inline-flex items-center gap-3 rounded-lg bg-accent px-4 py-2.5 shadow-sm">
+            <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accent-foreground/70">
+              Powered by
+            </span>
+            <img
+              src={fdLogo}
+              alt="ForceDecks — Dual Force Plate System"
+              className="h-7 w-auto"
+            />
+          </div>
           <p className="mt-6 text-lg text-foreground/80">
             FIT Beyond Therapy uses ForceDecks force plate technology to objectively assess force
             production, landing mechanics, and left/right asymmetries — the same tech used by pro
@@ -30,6 +49,27 @@ export function ForceDecks() {
             That means we build a plan on data — not guesswork — and your referring physician
             gets real progress metrics they can trust.
           </p>
+
+          <div className="mt-10">
+            <p className="font-mono text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              What we measure
+            </p>
+            <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-4">
+              {METRICS.map(({ label, Icon }, i) => (
+                <Reveal
+                  key={label}
+                  as="li"
+                  delay={i * 80}
+                  className="group flex flex-col items-start gap-4"
+                >
+                  <span className="grid h-12 w-12 rotate-45 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm transition-transform duration-500 ease-out group-hover:rotate-[60deg]">
+                    <Icon className="h-5 w-5 -rotate-45 transition-transform duration-500 ease-out group-hover:-rotate-[60deg]" />
+                  </span>
+                  <span className="text-sm font-semibold">{label}</span>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
 
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-8">
             {[
