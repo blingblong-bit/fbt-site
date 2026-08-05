@@ -5,8 +5,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 const NAV_LINKS = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/athletic-performance", label: "Athletic Performance" },
-  { to: "/forcedecks", label: "Performance Testing" },
+  { to: "/fit-beyond-performance", label: "FIT Beyond Performance" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;

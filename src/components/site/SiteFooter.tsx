@@ -50,13 +50,8 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/forcedecks" className="hover:text-accent">
-                  Performance Testing
-                </Link>
-              </li>
-              <li>
-                <Link to="/athletic-performance" className="hover:text-accent">
-                  Athletic Performance
+                <Link to="/fit-beyond-performance" className="hover:text-accent">
+                  FIT Beyond Performance
                 </Link>
               </li>
               <li>

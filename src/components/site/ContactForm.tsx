@@ -110,9 +110,7 @@ export function ContactForm() {
             </option>
             <option value="personal-training">Personal training</option>
             <option value="post-rehab">Post-rehab training</option>
-            <option value="athletic-performance">Athletic performance</option>
-            <option value="performance-testing">Performance testing</option>
-            <option value="team-training">Team training</option>
+            <option value="fit-beyond-performance">FIT Beyond Performance</option>
             <option value="not-sure">Not sure yet</option>
           </select>
           {errors.serviceInterest && (

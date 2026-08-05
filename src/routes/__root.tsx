@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         title:
-          "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance | Tullahoma, TN",
+          "FIT Beyond Therapy — Personal Training, Post-Rehab & FIT Beyond Performance | Tullahoma, TN",
       },
       {
         name: "description",
@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       {
         property: "og:title",
-        content: "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance",
+        content: "FIT Beyond Therapy — Personal Training, Post-Rehab & FIT Beyond Performance",
       },
       {
         property: "og:description",

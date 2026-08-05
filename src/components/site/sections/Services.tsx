@@ -12,19 +12,9 @@ const SERVICES = [
     body: "Structured progression for clients discharged from PT who need to rebuild real strength and confidence in movement — not just tolerate it.",
   },
   {
-    icon: "AP",
-    title: "Athletic Performance",
-    body: "Speed, strength, power, coordination, and conditioning for middle-school through competitive athletes — built on the same assessment-driven foundation as our rehab work.",
-  },
-  {
-    icon: "TT",
-    title: "Team Training",
-    body: "On-site or facility-based performance programs for sports teams and organizations, with baseline and progress testing available for every athlete.",
-  },
-  {
-    icon: "FD",
-    title: "Performance Testing",
-    body: "ForceDecks assessments, jump testing, and asymmetry analysis that objectively measure force production and movement quality — real data, for you and your coach.",
+    icon: "FP",
+    title: "FIT Beyond Performance",
+    body: "Individual, small-group, and team athletic training for middle-school through competitive athletes — speed, strength, power, and conditioning, backed by ForceDecks performance testing.",
   },
 ];
 

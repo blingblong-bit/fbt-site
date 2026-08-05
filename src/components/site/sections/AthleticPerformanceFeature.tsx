@@ -53,13 +53,13 @@ export function AthleticPerformanceFeature() {
 
           <Reveal delay={160} className="flex flex-col gap-3 lg:col-span-5">
             <Link
-              to="/athletic-performance"
+              to="/fit-beyond-performance"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
             >
-              Explore Athletic Performance
+              Explore FIT Beyond Performance
             </Link>
             <Link
-              to="/athletic-performance"
+              to="/fit-beyond-performance"
               hash="assessment"
               className="inline-flex items-center justify-center rounded-md border border-border bg-card px-6 py-3 text-base font-semibold text-primary transition-colors hover:bg-surface"
             >

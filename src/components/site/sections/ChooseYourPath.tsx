@@ -19,18 +19,11 @@ const PATHS = [
     hash: "post-rehab",
   },
   {
-    icon: "AP",
-    title: "Athletic Performance",
-    body: "Speed, strength, power, coordination, and conditioning for middle-school, high-school, and competitive athletes.",
-    cta: "Explore Athletic Performance",
-    to: "/athletic-performance" as const,
-  },
-  {
-    icon: "FD",
-    title: "Performance Testing",
-    body: "Measure force production, power, balance, and asymmetry using ForceDecks technology and structured performance assessments.",
-    cta: "Explore Performance Testing",
-    to: "/forcedecks" as const,
+    icon: "FP",
+    title: "FIT Beyond Performance",
+    body: "Individual, small-group, and team athletic training for middle-school, high-school, and competitive athletes — backed by ForceDecks performance testing.",
+    cta: "Explore FIT Beyond Performance",
+    to: "/fit-beyond-performance" as const,
   },
 ];
 
@@ -52,7 +45,7 @@ export function ChooseYourPath() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PATHS.map((p, i) => (
             <Reveal
               key={p.title}

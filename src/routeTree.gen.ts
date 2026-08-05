@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AthleticPerformanceRouteImport } from './routes/athletic-performance'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FitBeyondPerformanceRouteImport } from './routes/fit-beyond-performance'
 import { Route as ForcedecksRouteImport } from './routes/forcedecks'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
@@ -37,6 +38,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FitBeyondPerformanceRoute = FitBeyondPerformanceRouteImport.update({
+  id: '/fit-beyond-performance',
+  path: '/fit-beyond-performance',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ForcedecksRoute = ForcedecksRouteImport.update({
   id: '/forcedecks',
   path: '/forcedecks',
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
+  '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
+  '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
+  '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
+    | '/fit-beyond-performance'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
+    | '/fit-beyond-performance'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
+    | '/fit-beyond-performance'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AthleticPerformanceRoute: typeof AthleticPerformanceRoute
   ContactRoute: typeof ContactRoute
+  FitBeyondPerformanceRoute: typeof FitBeyondPerformanceRoute
   ForcedecksRoute: typeof ForcedecksRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -151,6 +164,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fit-beyond-performance': {
+      id: '/fit-beyond-performance'
+      path: '/fit-beyond-performance'
+      fullPath: '/fit-beyond-performance'
+      preLoaderRoute: typeof FitBeyondPerformanceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/forcedecks': {
       id: '/forcedecks'
       path: '/forcedecks'
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AthleticPerformanceRoute: AthleticPerformanceRoute,
   ContactRoute: ContactRoute,
+  FitBeyondPerformanceRoute: FitBeyondPerformanceRoute,
   ForcedecksRoute: ForcedecksRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
