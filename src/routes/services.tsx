@@ -13,7 +13,10 @@ export const Route = createFileRoute("/services")({
           "Post-rehab strength, ForceDecks assessments, injury prevention, functional training, athletic performance, and conditioning in Tullahoma, TN.",
       },
       { property: "og:title", content: "Services | FIT Beyond Therapy" },
-      { property: "og:description", content: "Assessment-driven training programs in Tullahoma, TN." },
+      {
+        property: "og:description",
+        content: "Assessment-driven training programs in Tullahoma, TN.",
+      },
       { property: "og:url", content: absoluteUrl("/services") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/services") }],

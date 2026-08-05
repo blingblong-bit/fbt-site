@@ -21,9 +21,7 @@ export function Reveal({
   style,
 }: RevealProps) {
   const { ref, inView } = useInViewFade<HTMLElement>();
-  const state = inView
-    ? "opacity-100 translate-y-0"
-    : "opacity-0 translate-y-6";
+  const state = inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6";
   return (
     <Tag
       ref={ref as never}

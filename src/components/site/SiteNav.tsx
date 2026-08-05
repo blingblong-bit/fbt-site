@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { useScrollY } from "@/hooks/useScrollY";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/forcedecks", label: "ForceDecks" },
   { to: "/athletic-performance", label: "Athletic Performance" },
+  { to: "/forcedecks", label: "Performance Testing" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -21,7 +22,9 @@ export function SiteNav() {
           : "border-transparent bg-background/70 backdrop-blur"
       }`}
     >
-      <div className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? "py-2" : "py-3.5"}`}>
+      <div
+        className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? "py-2" : "py-3.5"}`}
+      >
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <span className="grid h-9 w-9 place-items-center rounded-md bg-[var(--secondary-foreground)] font-display text-primary-foreground font-bold">
             F
@@ -46,10 +49,10 @@ export function SiteNav() {
 
         <div className="flex items-center gap-2">
           <a
-            href="tel:+19315550100"
+            href={PHONE_TEL}
             className="hidden text-sm font-semibold text-primary hover:text-primary-hover md:inline"
           >
-            (931) 555-0100
+            {PHONE_DISPLAY}
           </a>
           <Link
             to="/contact"

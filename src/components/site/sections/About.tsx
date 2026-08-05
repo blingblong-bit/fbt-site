@@ -1,7 +1,14 @@
+import { Link } from "@tanstack/react-router";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Reveal } from "../Reveal";
 
-export function About({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" }) {
+export function About({
+  titleTag: TitleTag = "h2",
+  showCta = true,
+}: {
+  titleTag?: "h1" | "h2";
+  showCta?: boolean;
+}) {
   return (
     <section id="about" className="bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-28">
@@ -17,18 +24,22 @@ export function About({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" })
             About FIT Beyond Therapy
           </p>
           <TitleTag className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Built by coaches who take the clinical side seriously.
+            Built by coaches who take assessment, progression, and results seriously.
           </TitleTag>
           <div className="mt-8 space-y-5 text-lg text-foreground/80">
             <p>
-              FIT Beyond Therapy was founded to close a gap our head coach kept seeing: clients
-              finishing physical therapy still weak, still compensating, and unsure of what to
-              do next. Instead of handing them a generic gym membership, we built a program.
+              FIT Beyond Therapy was created for people who need more than general exercise but no
+              longer need traditional clinical rehabilitation.
             </p>
             <p>
-              Our approach is clinical in its rigor — objective assessment, structured
-              progression, measurable outcomes — and athletic in its ambition. We don't just
-              want you pain-free. We want you strong, resilient, and confident under load.
+              We work with adults rebuilding strength, individuals seeking structured personal
+              training, and athletes working to improve performance. Our coaching process combines
+              practical training experience, objective assessment, individualized programming, and
+              consistent progression.
+            </p>
+            <p>
+              We believe every client should understand what they are working on, why it matters,
+              and how their program is moving them forward.
             </p>
           </div>
 
@@ -36,19 +47,28 @@ export function About({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" })
             <div>
               <h3 className="font-display text-lg font-bold">Head Coach & Founder</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                [Name], [Credentials — e.g. CSCS, ATC]. Two decades of coaching experience
-                bridging clinical rehab and performance training. [Short bio placeholder — swap
-                in real copy.]
+                [Name], [Credentials — e.g. CSCS, ATC]. Two decades of coaching experience bridging
+                clinical rehab and performance training. [Short bio placeholder — swap in real
+                copy.]
               </p>
             </div>
             <div>
               <h3 className="font-display text-lg font-bold">Coaching Team</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Certified strength coaches with backgrounds in rehab, athletic training, and
-                sport performance. Space reserved here for additional staff bios.
+                Certified strength coaches with backgrounds in rehab, athletic training, and sport
+                performance. Space reserved here for additional staff bios.
               </p>
             </div>
           </div>
+
+          {showCta && (
+            <Link
+              to="/about"
+              className="mt-10 inline-flex items-center rounded-md border border-border bg-card px-6 py-3 text-base font-semibold text-primary transition-colors hover:bg-surface"
+            >
+              Learn More About FIT Beyond
+            </Link>
+          )}
         </Reveal>
       </div>
     </section>

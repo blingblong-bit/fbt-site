@@ -1,4 +1,5 @@
 import { Reveal } from "../Reveal";
+import { FBP_URL } from "@/lib/site";
 
 export function FitBeyondPlus() {
   return (
@@ -10,16 +11,20 @@ export function FitBeyondPlus() {
               Connected to FIT Beyond Plus
             </p>
             <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">
-              A gym floor waiting when your program is done.
+              A complete training environment under one FIT Beyond system.
             </h2>
             <p className="mt-3 text-foreground/75">
-              When you graduate from your FBT program, FIT Beyond Plus is right here — same
-              address, same standards — for ongoing strength and general fitness memberships.
-              No handoff, no starting over.
+              FIT Beyond Therapy provides individualized coaching, post-rehab progression,
+              performance development, and objective testing. FIT Beyond Plus provides 24-hour gym
+              access, commercial strength equipment, cardio equipment, classes, and an environment
+              where clients can continue building long-term fitness. Together, the two businesses
+              provide a clearer path from coached training to greater independence.
             </p>
           </div>
           <a
-            href="#"
+            href={FBP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center rounded-md border border-primary bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
           >
             Visit FIT Beyond Plus →

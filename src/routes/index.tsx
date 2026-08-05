@@ -2,8 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { absoluteUrl } from "@/lib/site";
 import { Hero } from "@/components/site/sections/Hero";
 import { TrustBar } from "@/components/site/sections/TrustBar";
-import { Services } from "@/components/site/sections/Services";
+import { ChooseYourPath } from "@/components/site/sections/ChooseYourPath";
+import { AthleticPerformanceFeature } from "@/components/site/sections/AthleticPerformanceFeature";
 import { ProblemGap } from "@/components/site/sections/ProblemGap";
+import { PersonalTraining } from "@/components/site/sections/PersonalTraining";
 import { ForceDecks } from "@/components/site/sections/ForceDecks";
 import { Results } from "@/components/site/sections/Results";
 import { About } from "@/components/site/sections/About";
@@ -24,8 +26,10 @@ function Home() {
     <>
       <Hero />
       <TrustBar />
-      <Services />
+      <ChooseYourPath />
+      <AthleticPerformanceFeature />
       <ProblemGap />
+      <PersonalTraining />
       <ForceDecks />
       <Results />
       <About />

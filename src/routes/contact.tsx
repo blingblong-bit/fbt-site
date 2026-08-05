@@ -1,20 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { absoluteUrl } from "@/lib/site";
+import {
+  absoluteUrl,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  EMAIL_DISPLAY,
+  EMAIL_HREF,
+  ADDRESS_LINE1,
+  ADDRESS_LINE2,
+} from "@/lib/site";
 import { ContactForm } from "@/components/site/ContactForm";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Schedule an Assessment | FIT Beyond Therapy" },
+      { title: "Contact | FIT Beyond Therapy" },
       {
         name: "description",
         content:
-          "Schedule a ForceDecks assessment or session at FIT Beyond Therapy. 449 W Lincoln St, Tullahoma, TN.",
+          "Request a consultation for personal training, post-rehab training, athletic performance, or performance testing at FIT Beyond Therapy. Tullahoma, TN.",
       },
       { property: "og:title", content: "Contact | FIT Beyond Therapy" },
       {
         property: "og:description",
-        content: "Schedule an assessment in Tullahoma, TN. Physician-referred welcome.",
+        content: "Tell us how we can help. Request a consultation in Tullahoma, TN.",
       },
       { property: "og:url", content: absoluteUrl("/contact") },
     ],
@@ -32,11 +40,11 @@ function ContactPage() {
             Get in touch
           </p>
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
-            Schedule an assessment.
+            Tell us how we can help.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Tell us a little about where you are and what you're working toward. A coach follows
-            up within one business day.
+            Complete the form below and a member of the FIT Beyond team will contact you to discuss
+            your goals and the best next step.
           </p>
         </div>
 
@@ -45,22 +53,25 @@ function ContactPage() {
             <div className="rounded-2xl border border-border bg-surface p-6 sm:p-7">
               <h2 className="font-display text-xl font-bold">Visit</h2>
               <p className="mt-3 text-foreground/85">
-                449 W Lincoln St
+                {ADDRESS_LINE1}
                 <br />
-                Tullahoma, TN 37388
+                {ADDRESS_LINE2}
               </p>
 
               <h2 className="mt-8 font-display text-xl font-bold">Call</h2>
               <p className="mt-3">
-                <a href="tel:+19315550100" className="text-lg font-semibold text-primary hover:text-primary-hover">
-                  (931) 555-0100
+                <a
+                  href={PHONE_TEL}
+                  className="text-lg font-semibold text-primary hover:text-primary-hover"
+                >
+                  {PHONE_DISPLAY}
                 </a>
               </p>
 
               <h2 className="mt-8 font-display text-xl font-bold">Email</h2>
               <p className="mt-3">
-                <a href="mailto:info@fitbeyondtherapy.com" className="text-primary hover:text-primary-hover">
-                  info@fitbeyondtherapy.com
+                <a href={EMAIL_HREF} className="text-primary hover:text-primary-hover">
+                  {EMAIL_DISPLAY}
                 </a>
               </p>
 

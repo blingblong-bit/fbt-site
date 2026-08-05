@@ -77,7 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance | Tullahoma, TN" },
+      {
+        title:
+          "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance | Tullahoma, TN",
+      },
       {
         name: "description",
         content:
@@ -116,8 +119,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@id": "https://fitbeyondtherapy.com/#business",
           name: "FIT Beyond Therapy",
           url: "https://fitbeyondtherapy.com",
-          description:
-            "Post-rehab strength training and athletic performance in Tullahoma, TN.",
+          description: "Post-rehab strength training and athletic performance in Tullahoma, TN.",
           telephone: "+1-931-555-0100",
           address: {
             "@type": "PostalAddress",
