@@ -2,34 +2,29 @@ import { Reveal } from "../Reveal";
 
 const SERVICES = [
   {
+    icon: "PT",
+    title: "Personal Training",
+    body: "Individualized strength, mobility, and conditioning for adults with specific goals — real-world movement patterns, not isolated machine work, with accountability built in.",
+  },
+  {
     icon: "PR",
-    title: "Post-Rehab Strength Training",
+    title: "Post-Rehab Training",
     body: "Structured progression for clients discharged from PT who need to rebuild real strength and confidence in movement — not just tolerate it.",
   },
   {
-    icon: "FD",
-    title: "ForceDecks Performance Assessment",
-    body: "Force plate testing that objectively measures asymmetries, force production, and movement quality. Real data — for you, for us, and for your doctor.",
-  },
-  {
-    icon: "IP",
-    title: "Injury Prevention & Movement Correction",
-    body: "Identify and correct the compensation patterns quietly setting you up for the next injury, before they cost you another six months.",
-  },
-  {
-    icon: "FT",
-    title: "Functional Training",
-    body: "Real-world movement patterns — hinge, squat, push, pull, carry, rotate — not isolated machine work that doesn't transfer to your life.",
-  },
-  {
     icon: "AP",
-    title: "Athletic Performance Development",
-    body: "Speed, power, and athleticism for youth and competitive athletes, built on the same assessment-driven foundation as our rehab work.",
+    title: "Athletic Performance",
+    body: "Speed, strength, power, coordination, and conditioning for middle-school through competitive athletes — built on the same assessment-driven foundation as our rehab work.",
   },
   {
-    icon: "CO",
-    title: "Conditioning",
-    body: "Sport-ready and life-ready conditioning, programmed only after strength foundations are in place — never before.",
+    icon: "TT",
+    title: "Team Training",
+    body: "On-site or facility-based performance programs for sports teams and organizations, with baseline and progress testing available for every athlete.",
+  },
+  {
+    icon: "FD",
+    title: "Performance Testing",
+    body: "ForceDecks assessments, jump testing, and asymmetry analysis that objectively measure force production and movement quality — real data, for you and your coach.",
   },
 ];
 

@@ -9,43 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as ForcedecksRouteImport } from './routes/forcedecks'
-import { Route as DoctorReferralsRouteImport } from './routes/doctor-referrals'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AthleticPerformanceRouteImport } from './routes/athletic-performance'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AthleticPerformanceRouteImport } from './routes/athletic-performance'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ForcedecksRouteImport } from './routes/forcedecks'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ForcedecksRoute = ForcedecksRouteImport.update({
-  id: '/forcedecks',
-  path: '/forcedecks',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DoctorReferralsRoute = DoctorReferralsRouteImport.update({
-  id: '/doctor-referrals',
-  path: '/doctor-referrals',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AthleticPerformanceRoute = AthleticPerformanceRouteImport.update({
-  id: '/athletic-performance',
-  path: '/athletic-performance',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -53,9 +27,29 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AthleticPerformanceRoute = AthleticPerformanceRouteImport.update({
+  id: '/athletic-performance',
+  path: '/athletic-performance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForcedecksRoute = ForcedecksRouteImport.update({
+  id: '/forcedecks',
+  path: '/forcedecks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -64,7 +58,6 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
-  '/doctor-referrals': typeof DoctorReferralsRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -74,7 +67,6 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
-  '/doctor-referrals': typeof DoctorReferralsRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -85,7 +77,6 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/athletic-performance': typeof AthleticPerformanceRoute
   '/contact': typeof ContactRoute
-  '/doctor-referrals': typeof DoctorReferralsRoute
   '/forcedecks': typeof ForcedecksRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -97,7 +88,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
-    | '/doctor-referrals'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -107,7 +97,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
-    | '/doctor-referrals'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -117,7 +106,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/athletic-performance'
     | '/contact'
-    | '/doctor-referrals'
     | '/forcedecks'
     | '/services'
     | '/sitemap.xml'
@@ -128,7 +116,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AthleticPerformanceRoute: typeof AthleticPerformanceRoute
   ContactRoute: typeof ContactRoute
-  DoctorReferralsRoute: typeof DoctorReferralsRoute
   ForcedecksRoute: typeof ForcedecksRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -136,46 +123,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/forcedecks': {
-      id: '/forcedecks'
-      path: '/forcedecks'
-      fullPath: '/forcedecks'
-      preLoaderRoute: typeof ForcedecksRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/doctor-referrals': {
-      id: '/doctor-referrals'
-      path: '/doctor-referrals'
-      fullPath: '/doctor-referrals'
-      preLoaderRoute: typeof DoctorReferralsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/athletic-performance': {
-      id: '/athletic-performance'
-      path: '/athletic-performance'
-      fullPath: '/athletic-performance'
-      preLoaderRoute: typeof AthleticPerformanceRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -185,11 +137,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/athletic-performance': {
+      id: '/athletic-performance'
+      path: '/athletic-performance'
+      fullPath: '/athletic-performance'
+      preLoaderRoute: typeof AthleticPerformanceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forcedecks': {
+      id: '/forcedecks'
+      path: '/forcedecks'
+      fullPath: '/forcedecks'
+      preLoaderRoute: typeof ForcedecksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -200,7 +180,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AthleticPerformanceRoute: AthleticPerformanceRoute,
   ContactRoute: ContactRoute,
-  DoctorReferralsRoute: DoctorReferralsRoute,
   ForcedecksRoute: ForcedecksRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -208,3 +187,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

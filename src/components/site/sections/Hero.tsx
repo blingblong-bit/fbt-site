@@ -37,12 +37,12 @@ export function Hero() {
             Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
-            Post-Rehab Strength Training That Gets You Back —{" "}
-            <span className="text-primary">And Keeps You There.</span>
+            Training built around where you are —{" "}
+            <span className="text-primary">and where you want to go.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Tullahoma's trusted bridge between physical therapy and full strength.
-            Backed by physician referrals, data-driven assessments, and real results.
+            Personalized strength training, post-rehab progression, and athletic performance
+            development in Tullahoma, TN — backed by objective ForceDecks testing.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link

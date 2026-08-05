@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { to: "/forcedecks", label: "ForceDecks" },
   { to: "/athletic-performance", label: "Athletic Performance" },
   { to: "/about", label: "About" },
-  { to: "/doctor-referrals", label: "Doctor Referrals" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -56,7 +55,7 @@ export function SiteNav() {
             to="/contact"
             className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
           >
-            Schedule a Session
+            Schedule a Consultation
           </Link>
         </div>
       </div>

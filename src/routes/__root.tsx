@@ -77,23 +77,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "FIT Beyond Therapy — Post-Rehab Strength & Athletic Performance | Tullahoma, TN" },
+      { title: "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Post-rehab strength training and athletic performance in Tullahoma, TN. Physician-referred, ForceDecks-assessed, results-first. The next step after physical therapy.",
+          "Personalized strength training, post-rehab progression, and athletic performance development in Tullahoma, TN — backed by objective ForceDecks testing.",
       },
       { name: "author", content: "FIT Beyond Therapy" },
       { property: "og:site_name", content: "FIT Beyond Therapy" },
       { property: "og:type", content: "website" },
       {
         property: "og:title",
-        content: "FIT Beyond Therapy — Post-Rehab Strength & Athletic Performance",
+        content: "FIT Beyond Therapy — Personal Training, Post-Rehab & Athletic Performance",
       },
       {
         property: "og:description",
         content:
-          "Tullahoma's trusted bridge between physical therapy and full strength. Physician referrals, ForceDecks assessments, real results.",
+          "Training built around where you are — and where you want to go. Personal training, post-rehab progression, and athletic performance in Tullahoma, TN.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],

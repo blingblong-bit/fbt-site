@@ -9,7 +9,7 @@ export function ProblemGap() {
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <Reveal className="max-w-3xl">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-secondary-foreground">
-            The Gap We Fill
+            Post-Rehab Training
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
             Physical Therapy Gets You Moving Again. We Get You Strong Again.

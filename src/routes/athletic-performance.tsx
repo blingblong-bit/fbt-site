@@ -28,7 +28,7 @@ export const Route = createFileRoute("/athletic-performance")({
 const PILLARS = [
   { t: "Speed", d: "Sprint mechanics, acceleration, top-end velocity — measured and progressed, not guessed." },
   { t: "Power", d: "Force production and rate of force development, tracked on the same ForceDecks data your rehab clients see." },
-  { t: "Durability", d: "Movement quality and asymmetry work that reduces the injuries that end seasons." },
+  { t: "Durability", d: "Movement quality and resilience work that helps you handle the demands of practice and competition." },
   { t: "Athleticism", d: "Coordination, deceleration, and change-of-direction skill — the qualities that separate athletes." },
 ];
 

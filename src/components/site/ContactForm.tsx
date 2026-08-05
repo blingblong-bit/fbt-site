@@ -6,7 +6,7 @@ const schema = z.object({
   phone: z.string().trim().min(7, "Phone is required").max(30),
   email: z.string().trim().email("Enter a valid email").max(255),
   message: z.string().trim().min(1, "Please add a short message").max(1000),
-  referredByPhysician: z.boolean().optional(),
+  serviceInterest: z.string().trim().min(1, "Please select what you're interested in"),
 });
 
 export function ContactForm() {
@@ -21,7 +21,7 @@ export function ContactForm() {
       phone: fd.get("phone"),
       email: fd.get("email"),
       message: fd.get("message"),
-      referredByPhysician: fd.get("referredByPhysician") === "on",
+      serviceInterest: fd.get("serviceInterest"),
     });
     if (!parsed.success) {
       const errs: Record<string, string> = {};
@@ -75,14 +75,31 @@ export function ContactForm() {
           {errors.message && <p className="mt-1 text-sm text-destructive">{errors.message}</p>}
         </div>
 
-        <label className="flex items-start gap-3 text-sm text-foreground/85">
-          <input
-            type="checkbox"
-            name="referredByPhysician"
-            className="mt-0.5 h-4 w-4 rounded border-input text-accent focus:ring-ring/30"
-          />
-          I was referred by a physician or physical therapist.
-        </label>
+        <div>
+          <label htmlFor="serviceInterest" className="block text-sm font-semibold text-primary">
+            What are you interested in?
+          </label>
+          <select
+            id="serviceInterest"
+            name="serviceInterest"
+            required
+            defaultValue=""
+            className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2 text-foreground shadow-sm outline-none focus:border-primary focus:ring-2 focus:ring-ring/30"
+          >
+            <option value="" disabled>
+              Select one
+            </option>
+            <option value="personal-training">Personal training</option>
+            <option value="post-rehab">Post-rehab training</option>
+            <option value="athletic-performance">Athletic performance</option>
+            <option value="performance-testing">Performance testing</option>
+            <option value="team-training">Team training</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+          {errors.serviceInterest && (
+            <p className="mt-1 text-sm text-destructive">{errors.serviceInterest}</p>
+          )}
+        </div>
 
         <button
           type="submit"
