@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useScrollY } from "@/hooks/useScrollY";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
-import fbtMark from "@/assets/brand/fbt-mark.png";
+import fbtLogo from "@/assets/fbt-logo.png.asset.json";
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },
@@ -25,11 +25,12 @@ export function SiteNav() {
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? "py-2" : "py-3.5"}`}
       >
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <img src={fbtMark} alt="FIT Beyond Therapy" className="h-9 w-9 object-contain" />
-          <span className="font-display text-base font-bold tracking-tight text-[var(--secondary-foreground)] sm:text-lg">
-            FIT Beyond Therapy
-          </span>
+        <Link to="/" className="flex shrink-0 items-center">
+          <img
+            src={fbtLogo.url}
+            alt="FIT Beyond Therapy"
+            className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-9" : "h-11"}`}
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">

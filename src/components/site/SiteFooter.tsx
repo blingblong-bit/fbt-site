@@ -7,7 +7,7 @@ import {
   ADDRESS_LINE1,
   ADDRESS_LINE2,
 } from "@/lib/site";
-import fbtMark from "@/assets/brand/fbt-mark.png";
+import fbtLogo from "@/assets/fbt-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -15,17 +15,12 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-md bg-white p-1 shadow-sm">
-                <img
-                  src={fbtMark}
-                  alt="FIT Beyond Therapy"
-                  className="h-full w-full object-contain"
-                />
-              </span>
-              <span className="font-display text-lg font-bold text-primary-foreground">
-                FIT Beyond Therapy
-              </span>
+            <div className="inline-flex rounded-lg bg-white px-4 py-3 shadow-sm">
+              <img
+                src={fbtLogo.url}
+                alt="FIT Beyond Therapy"
+                className="h-11 w-auto object-contain"
+              />
             </div>
             <p className="mt-4 max-w-md text-sm text-primary-foreground/70">
               Personal training, post-rehab progression, and athletic performance development in
