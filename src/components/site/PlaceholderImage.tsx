@@ -26,7 +26,10 @@ export function PlaceholderImage({
       </div>
     );
   }
-  const bg = tone === "dark" ? "bg-primary/90 text-primary-foreground" : "bg-surface-strong text-muted-foreground";
+  const bg =
+    tone === "dark"
+      ? "bg-primary/90 text-primary-foreground"
+      : "bg-surface-strong text-muted-foreground";
   return (
     <div
       role="img"

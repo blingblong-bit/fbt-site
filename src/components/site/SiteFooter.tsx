@@ -1,4 +1,12 @@
 import { Link } from "@tanstack/react-router";
+import {
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  EMAIL_DISPLAY,
+  EMAIL_HREF,
+  ADDRESS_LINE1,
+  ADDRESS_LINE2,
+} from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -15,16 +23,18 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="mt-4 max-w-md text-sm text-primary-foreground/70">
-              Post-rehab strength training and athletic performance in Tullahoma, TN.
-              The structured next step between physical therapy and full strength.
+              Personal training, post-rehab progression, and athletic performance development in
+              Tullahoma, TN — backed by objective ForceDecks testing.
             </p>
             <p className="mt-6 text-sm text-primary-foreground/70">
-              449 W Lincoln St, Tullahoma, TN 37388
+              {ADDRESS_LINE1}, {ADDRESS_LINE2}
               <br />
-              <a href="tel:+19315550100" className="hover:text-accent">(931) 555-0100</a>
+              <a href={PHONE_TEL} className="hover:text-accent">
+                {PHONE_DISPLAY}
+              </a>
               <br />
-              <a href="mailto:info@fitbeyondtherapy.com" className="hover:text-accent">
-                info@fitbeyondtherapy.com
+              <a href={EMAIL_HREF} className="hover:text-accent">
+                {EMAIL_DISPLAY}
               </a>
             </p>
           </div>
@@ -34,12 +44,26 @@ export function SiteFooter() {
               Explore
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/services" className="hover:text-accent">Services</Link></li>
-              <li><Link to="/forcedecks" className="hover:text-accent">ForceDecks Assessment</Link></li>
-              <li><Link to="/athletic-performance" className="hover:text-accent">Athletic Performance</Link></li>
-              <li><Link to="/about" className="hover:text-accent">About</Link></li>
-              <li><Link to="/doctor-referrals" className="hover:text-accent">Doctor Referrals</Link></li>
-              <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
+              <li>
+                <Link to="/services" className="hover:text-accent">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/fit-beyond-performance" className="hover:text-accent">
+                  FIT Beyond Performance
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-accent">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-accent">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 

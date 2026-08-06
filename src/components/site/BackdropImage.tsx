@@ -15,11 +15,14 @@ export function BackdropImage({
     overlay === "primary"
       ? "bg-gradient-to-b from-primary/92 via-primary/85 to-primary/95"
       : overlay === "dark"
-      ? "bg-gradient-to-b from-black/85 via-black/70 to-black/90"
-      : "bg-gradient-to-b from-black/60 via-black/65 to-black/75";
+        ? "bg-gradient-to-b from-black/85 via-black/70 to-black/90"
+        : "bg-gradient-to-b from-black/60 via-black/65 to-black/75";
 
   return (
-    <div className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
+    <div
+      className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
+      aria-hidden="true"
+    >
       {src ? (
         <img src={src} alt="" className="absolute inset-0 h-full w-full object-cover" />
       ) : (

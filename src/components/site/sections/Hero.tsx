@@ -34,30 +34,34 @@ export function Hero() {
         <div className="lg:col-span-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <span className="h-2 w-2 rotate-45 bg-accent" />
-            Tullahoma, TN
+            Personalized Training in Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
-            Post-Rehab Strength Training That Gets You Back —{" "}
-            <span className="text-primary">And Keeps You There.</span>
+            Training built around where you are —{" "}
+            <span className="text-primary">and where you want to go.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Tullahoma's trusted bridge between physical therapy and full strength.
-            Backed by physician referrals, data-driven assessments, and real results.
+            FIT Beyond Therapy provides personalized strength training, post-rehab progression,
+            athletic performance development, and objective performance testing for adults and
+            athletes in Tullahoma, Tennessee.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
             >
-              Schedule an Assessment
+              Schedule a Consultation
             </Link>
-            <a
-              href="tel:+19315550100"
+            <Link
+              to="/services"
               className="inline-flex items-center justify-center rounded-md border border-border bg-card px-6 py-3 text-base font-semibold text-primary transition-colors hover:bg-surface"
             >
-              Call (931) 555-0100
-            </a>
+              Explore Our Services
+            </Link>
           </div>
+          <p className="mt-6 text-sm font-medium text-muted-foreground">
+            Individualized coaching. Objective assessments. Measurable progress.
+          </p>
         </div>
 
         <div className="relative lg:col-span-6">
