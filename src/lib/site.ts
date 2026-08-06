@@ -6,11 +6,10 @@ export const absoluteUrl = (path: string) => `${SITE_URL}${path === "/" ? "/" : 
 
 /**
  * Contact info — centralized so it's a one-line change everywhere.
- * TODO: These are still placeholders. Replace with the real phone number
- * and email before launch, then every section/form picks it up automatically.
+ * Phone is real. TODO: email is still a placeholder — replace before launch.
  */
-export const PHONE_DISPLAY = "(931) 555-0100";
-export const PHONE_TEL = "tel:+19315550100";
+export const PHONE_DISPLAY = "(931) 224-6244";
+export const PHONE_TEL = "tel:+19312246244";
 export const EMAIL_DISPLAY = "info@fitbeyondtherapy.com";
 export const EMAIL_HREF = "mailto:info@fitbeyondtherapy.com";
 export const ADDRESS_LINE1 = "449 W Lincoln St";

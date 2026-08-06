@@ -15,7 +15,6 @@ import { Reveal } from "@/components/site/Reveal";
 import { AthleteInquiryForm } from "@/components/site/AthleteInquiryForm";
 import { BackdropImage } from "@/components/site/BackdropImage";
 import { Results } from "@/components/site/sections/Results";
-import { AsymmetryIcon, BalanceIcon, StrengthIcon, PowerIcon } from "@/components/site/ValdIcons";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
 import { photos } from "@/assets/photos";
 
@@ -31,7 +30,7 @@ export const Route = createFileRoute("/fit-beyond-performance")({
       { property: "og:title", content: "FIT Beyond Performance | FIT Beyond Therapy" },
       {
         property: "og:description",
-        content: "Stronger. Faster. More prepared for competition. Tullahoma, TN.",
+        content: "Stronger. Faster. Better prepared to compete. Tullahoma, TN.",
       },
       { property: "og:url", content: absoluteUrl("/fit-beyond-performance") },
     ],
@@ -42,37 +41,37 @@ export const Route = createFileRoute("/fit-beyond-performance")({
 
 const WHO_WE_TRAIN = [
   {
-    t: "Middle School",
-    d: "Build coordination, movement skill, strength foundations, sprint mechanics, and confidence in a structured environment.",
+    t: "Middle School Athletes",
+    d: "Build coordination, movement skill, strength foundations, and confidence in a structured environment.",
   },
   {
-    t: "High School",
-    d: "Develop greater strength, power, speed, durability, and physical preparation for competition.",
+    t: "High School Athletes",
+    d: "Develop greater strength, power, speed, and physical preparation for competition.",
   },
   {
-    t: "Individual Athletes",
-    d: "Targeted programming and objective testing to address specific performance needs and continue progressing.",
+    t: "Individual Coaching",
+    d: "Targeted programming and objective testing to address specific performance needs.",
   },
   {
-    t: "Teams",
-    d: "A structured strength, speed, conditioning, or testing program designed around the needs of the full roster.",
+    t: "Team Programs",
+    d: "A structured strength, speed, and conditioning program designed around the needs of the full roster.",
   },
 ];
 
 const TRAINING_OPTIONS = [
   {
     t: "Individual",
-    d: "One-on-one coaching for athletes with specific goals, individual limitations, or advanced programming needs.",
+    d: "One-on-one coaching with a program based on the athlete's needs, training history, and current abilities.",
     cta: "Ask About Individual Training",
   },
   {
     t: "Small Group",
-    d: "Structured sessions that allow athletes to train with others while still receiving coaching and progression.",
+    d: "Structured sessions where athletes train alongside others while still receiving coaching, progression, and individual adjustments.",
     cta: "Join a Performance Group",
   },
   {
     t: "Team Programs",
-    d: "Strength, speed, power, movement, conditioning, and testing programs for school, club, and travel teams.",
+    d: "Strength, speed, power, movement, and conditioning programs built for teams, schools, and local organizations.",
     cta: "Request Team Information",
   },
 ];
@@ -80,43 +79,36 @@ const TRAINING_OPTIONS = [
 const PILLARS = [
   {
     t: "Speed",
-    d: "Improve acceleration, sprint mechanics, posture, rhythm, and the ability to apply force into the ground.",
+    d: "Improve acceleration, sprint mechanics, and the ability to produce force quickly.",
   },
   {
     t: "Strength",
-    d: "Build the force-producing capacity athletes need for sprinting, jumping, contact, and long-term development.",
+    d: "Build the physical foundation athletes need to run, jump, change direction, and handle contact.",
   },
   {
     t: "Power",
-    d: "Train athletes to express strength quickly through jumps, throws, explosive lifts, and athletic movements.",
+    d: "Develop the ability to express strength quickly through jumping, sprinting, and explosive movement.",
   },
   {
     t: "Coordination",
-    d: "Develop body control, balance, and the movement skill that separates athletes from athletes who just work hard.",
+    d: "Improve body control, rhythm, balance, and efficient movement.",
   },
   {
     t: "Deceleration",
-    d: "Landing control and change-of-direction mechanics — slowing down safely is a trainable skill, not luck.",
+    d: "Learn to slow down, land, and change direction with greater control.",
   },
   {
     t: "Conditioning",
-    d: "Build the ability to repeat high-quality efforts and meet the energy demands of practice and competition.",
+    d: "Build the ability to repeatedly perform high-quality efforts without breaking down.",
   },
 ];
 
-const METRICS = [
-  { label: "Asymmetry", Icon: AsymmetryIcon },
-  { label: "Balance", Icon: BalanceIcon },
-  { label: "Strength", Icon: StrengthIcon },
-  { label: "Power", Icon: PowerIcon },
-];
-
 const TESTING_INCLUDES = [
-  "ForceDecks force plate assessment",
-  "Baseline measurement",
-  "Asymmetry and power data",
-  "Retesting on a regular cadence",
-  "Progress reports you and your athlete can actually read",
+  "Jump performance",
+  "Force production",
+  "Left-to-right differences",
+  "Balance and movement strategy",
+  "Retesting over time",
 ];
 
 const SAMPLE = [
@@ -135,8 +127,8 @@ const FACILITY_POINTS = [
     d: "A dedicated space built for coached athletic development — not a corner of a general gym floor.",
   },
   {
-    t: "Real Athlete Photography",
-    d: "See the space and the coaching in action before you ever walk in the door.",
+    t: "Purposeful Coaching",
+    d: "Every session is coached with clear intent, structure, and progression — not random drills or unsupervised workouts.",
   },
 ];
 
@@ -151,7 +143,7 @@ const FAQS = [
   },
   {
     q: "Is the training sport-specific?",
-    a: "The program develops physical qualities that support many sports. Certain exercises, conditioning methods, and priorities may be adjusted based on the athlete's sport and position.",
+    a: "The program develops general athletic qualities — speed, strength, power, coordination, and conditioning — that transfer across sports. It is not position-specific skill coaching.",
   },
   {
     q: "How large are the groups?",
@@ -186,7 +178,7 @@ function FitBeyondPerformancePage() {
               FIT Beyond Performance
             </p>
             <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
-              Stronger. Faster. More prepared for competition.
+              Stronger. Faster. Better prepared to compete.
             </h1>
             <p className="mt-6 text-lg text-foreground/80">
               Individual, small-group, and team athletic training — built on real coaching and
@@ -227,7 +219,7 @@ function FitBeyondPerformancePage() {
               Who It Is For
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-              Development for athletes at every stage.
+              Built for developing athletes.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -302,6 +294,18 @@ function FitBeyondPerformancePage() {
               </Reveal>
             ))}
           </div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <PlaceholderImage
+              label="Sprint and jump training in progress"
+              aspect="aspect-[4/3]"
+              className="shadow-card"
+            />
+            <PlaceholderImage
+              label="Coach working directly with an athlete"
+              aspect="aspect-[4/3]"
+              className="shadow-card"
+            />
+          </div>
         </div>
       </section>
 
@@ -322,9 +326,10 @@ function FitBeyondPerformancePage() {
               <img src={fdLogo} alt="ForceDecks — Dual Force Plate System" className="h-7 w-auto" />
             </div>
             <p className="mt-6 text-lg text-foreground/80">
-              Every FIT Beyond Performance athlete has access to ForceDecks testing — the same force
-              plate technology used by pro and collegiate programs — as part of how we build and
-              adjust the training plan, not as a separate add-on service.
+              Testing gives us a starting point, helps guide training, and allows us to measure
+              progress over time. Every FIT Beyond Performance athlete has access to ForceDecks
+              testing as part of how we build and adjust the training plan — not as a separate
+              add-on service.
             </p>
             <ul className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
               {TESTING_INCLUDES.map((item) => (
@@ -332,22 +337,6 @@ function FitBeyondPerformancePage() {
                   <span aria-hidden className="mt-1.5 h-2 w-2 shrink-0 rotate-45 bg-accent" />
                   {item}
                 </li>
-              ))}
-            </ul>
-
-            <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-4">
-              {METRICS.map(({ label, Icon }, i) => (
-                <Reveal
-                  key={label}
-                  as="li"
-                  delay={i * 80}
-                  className="group flex flex-col items-start gap-4"
-                >
-                  <span className="grid h-12 w-12 rotate-45 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm transition-transform duration-500 ease-out group-hover:rotate-[60deg]">
-                    <Icon className="h-5 w-5 -rotate-45 transition-transform duration-500 ease-out group-hover:-rotate-[60deg]" />
-                  </span>
-                  <span className="text-sm font-semibold">{label}</span>
-                </Reveal>
               ))}
             </ul>
 
@@ -416,6 +405,11 @@ function FitBeyondPerformancePage() {
                 Example assessment display. Individual results and selected tests vary by client.
               </p>
             </div>
+            <PlaceholderImage
+              label="Athlete on ForceDecks plates with coach reading the screen"
+              aspect="aspect-[16/9]"
+              className="mt-6 shadow-card"
+            />
           </Reveal>
         </div>
       </section>
@@ -423,9 +417,8 @@ function FitBeyondPerformancePage() {
       {/* 6. Facility and equipment */}
       <section className="relative bg-primary text-primary-foreground">
         <BackdropImage
-          label="facility and equipment, wide shot"
+          label="new equipment and renovated training space, wide shot"
           overlay="primary"
-          src={photos.athleticPerformance}
         />
         <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <Reveal>
@@ -488,8 +481,8 @@ function FitBeyondPerformancePage() {
               Give your athlete more than another workout. Give them a development plan.
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">
-              Tell us about the athlete, their sport, and what they want to improve. We will help
-              determine the best training or assessment option.
+              Leave your information and we'll contact you to discuss the best starting point for
+              your athlete.
             </p>
           </div>
           <div className="mx-auto mt-12 max-w-3xl">

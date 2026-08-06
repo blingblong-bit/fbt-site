@@ -7,6 +7,7 @@ import {
   ADDRESS_LINE1,
   ADDRESS_LINE2,
 } from "@/lib/site";
+import fbtMark from "@/assets/brand/fbt-mark.png";
 
 export function SiteFooter() {
   return (
@@ -14,9 +15,13 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2">
-              <span className="grid h-9 w-9 place-items-center rounded-md bg-accent font-display font-bold text-accent-foreground">
-                F
+            <div className="flex items-center gap-2.5">
+              <span className="grid h-9 w-9 place-items-center rounded-md bg-white p-1 shadow-sm">
+                <img
+                  src={fbtMark}
+                  alt="FIT Beyond Therapy"
+                  className="h-full w-full object-contain"
+                />
               </span>
               <span className="font-display text-lg font-bold text-primary-foreground">
                 FIT Beyond Therapy

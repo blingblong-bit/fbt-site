@@ -48,8 +48,7 @@ export function About({
               <h3 className="font-display text-lg font-bold">Head Coach & Founder</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 [Name], [Credentials — e.g. CSCS, ATC]. Two decades of coaching experience bridging
-                clinical rehab and performance training. [Short bio placeholder — swap in real
-                copy.]
+                rehab and performance training. [Short bio placeholder — swap in real copy.]
               </p>
             </div>
             <div>

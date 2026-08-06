@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { z } from "zod";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { submitContactLead } from "@/lib/leads";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -13,19 +14,15 @@ const schema = z.object({
   message: z.string().trim().max(1000).optional(),
 });
 
-// NOTE: This form currently only validates locally and shows a success state —
-// it does not yet store the submission or send a notification anywhere.
-// TODO: wire onSubmit to an actual backend (Supabase table + email/notification,
-// or a form service) before treating a submission as "sent". Do not ship the
-// success state below to production until that's connected — a false success
-// message is worse than a visible error.
 export function ContactForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [status, setStatus] = useState<"idle" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const parsed = schema.safeParse({
       name: fd.get("name"),
       phone: fd.get("phone"),
@@ -45,8 +42,19 @@ export function ContactForm() {
       return;
     }
     setErrors({});
-    setStatus("sent");
-    e.currentTarget.reset();
+    setStatus("submitting");
+    try {
+      await submitContactLead({ data: parsed.data });
+      setStatus("sent");
+      form.reset();
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong submitting this form. Please call or text us directly.",
+      );
+    }
   }
 
   if (status === "sent") {
@@ -74,6 +82,15 @@ export function ContactForm() {
       className="rounded-2xl border border-border bg-card p-6 shadow-card sm:p-8"
     >
       <div className="grid gap-5">
+        {status === "error" && (
+          <div className="rounded-md border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
+            {errorMessage} You can also reach us directly at{" "}
+            <a href={PHONE_TEL} className="font-semibold underline">
+              {PHONE_DISPLAY}
+            </a>
+            .
+          </div>
+        )}
         <Field label="Full name" name="name" error={errors.name} required autoComplete="name" />
         <div className="grid gap-5 sm:grid-cols-2">
           <Field
@@ -182,9 +199,10 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="mt-2 inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
+          disabled={status === "submitting"}
+          className="mt-2 inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Request a Consultation
+          {status === "submitting" ? "Sending…" : "Request a Consultation"}
         </button>
         <p className="text-xs text-muted-foreground">
           We'll respond within one business day. Your information is never shared.

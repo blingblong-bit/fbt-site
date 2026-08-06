@@ -6,12 +6,12 @@ const FAQS = [
     a: "No. You can contact FIT Beyond Therapy directly. We will discuss your goals and help determine whether our services are appropriate for you.",
   },
   {
-    q: "Do you provide physical therapy?",
-    a: "No. FIT Beyond Therapy is not a physical-therapy clinic. We provide strength training, personal training, athletic development, performance testing, and structured training after someone has completed physical therapy.",
+    q: "Is FIT Beyond Therapy a physical-therapy clinic?",
+    a: "No. FIT Beyond Therapy is not a physical-therapy clinic. We provide strength training, personal training, athletic development, and performance testing — including structured training after someone has completed physical therapy.",
   },
   {
-    q: "Who is post-rehab training for?",
-    a: "It is designed for individuals who have completed physical therapy or been cleared from clinical rehabilitation but still need help rebuilding strength, confidence, and physical capacity.",
+    q: "Do I need to finish physical therapy before starting?",
+    a: "If you're coming to us for post-rehab training, yes — that program is designed for people who have completed physical therapy or been cleared from clinical rehabilitation but still need help rebuilding strength, confidence, and capacity. Our personal training and performance programs don't require any PT history at all.",
   },
   {
     q: "What ages do you train?",
@@ -20,6 +20,10 @@ const FAQS = [
   {
     q: "Do I need training experience?",
     a: "No. Programs are adjusted to your current ability. Beginners are welcome.",
+  },
+  {
+    q: "Do you offer individual and small-group training?",
+    a: "Yes. Depending on the program, you can train one-on-one, in a small group, or as part of a team — we'll help you figure out which format fits best.",
   },
   {
     q: "What happens during the first consultation?",

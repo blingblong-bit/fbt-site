@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteNav } from "../components/site/SiteNav";
 import { SiteFooter } from "../components/site/SiteFooter";
+import { PHONE_TEL, ADDRESS_LINE1 } from "../lib/site";
 
 function NotFoundComponent() {
   return (
@@ -98,11 +99,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Training built around where you are — and where you want to go. Personal training, post-rehab progression, and athletic performance in Tullahoma, TN.",
       },
+      { property: "og:image", content: "https://fitbeyondtherapy.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fitbeyondtherapy.com/og-image.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -119,11 +123,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@id": "https://fitbeyondtherapy.com/#business",
           name: "FIT Beyond Therapy",
           url: "https://fitbeyondtherapy.com",
-          description: "Post-rehab strength training and athletic performance in Tullahoma, TN.",
-          telephone: "+1-931-555-0100",
+          description:
+            "Personalized strength training, post-rehab progression, and athletic performance development in Tullahoma, TN.",
+          telephone: PHONE_TEL.replace("tel:", ""),
           address: {
             "@type": "PostalAddress",
-            streetAddress: "449 W Lincoln St",
+            streetAddress: ADDRESS_LINE1,
             addressLocality: "Tullahoma",
             addressRegion: "TN",
             postalCode: "37388",

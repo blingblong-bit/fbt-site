@@ -17,7 +17,8 @@ export function ProblemGap() {
             Post-Rehab Training
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
-            Physical therapy gets you moving again. We help you become strong again.
+            Physical therapy helps restore function. We help you continue building strength,
+            confidence, and capacity afterward.
           </h2>
         </Reveal>
         <div className="mt-10 grid gap-8 text-lg leading-relaxed text-primary-foreground/80 md:grid-cols-2">

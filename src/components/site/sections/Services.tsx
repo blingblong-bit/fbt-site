@@ -2,16 +2,19 @@ import { Reveal } from "../Reveal";
 
 const SERVICES = [
   {
+    id: "personal-training",
     icon: "PT",
     title: "Personal Training",
     body: "Individualized strength, mobility, and conditioning for adults with specific goals — real-world movement patterns, not isolated machine work, with accountability built in.",
   },
   {
+    id: "post-rehab",
     icon: "PR",
     title: "Post-Rehab Training",
     body: "Structured progression for clients discharged from PT who need to rebuild real strength and confidence in movement — not just tolerate it.",
   },
   {
+    id: "fit-beyond-performance",
     icon: "FP",
     title: "FIT Beyond Performance",
     body: "Individual, small-group, and team athletic training for middle-school through competitive athletes — speed, strength, power, and conditioning, backed by ForceDecks performance testing.",
@@ -42,8 +45,9 @@ export function Services({ heading = true }: { heading?: boolean }) {
             <Reveal
               key={s.title}
               as="article"
+              id={s.id}
               delay={i * 80}
-              className="group flex flex-col rounded-2xl border border-border bg-card p-7 shadow-card transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-elevated"
+              className="group flex scroll-mt-24 flex-col rounded-2xl border border-border bg-card p-7 shadow-card transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-elevated"
             >
               <div className="grid h-11 w-11 rotate-45 place-items-center rounded-lg bg-primary font-mono text-sm font-bold text-primary-foreground shadow-sm transition-transform duration-500 ease-out group-hover:rotate-[60deg]">
                 <span className="-rotate-45 transition-transform duration-500 ease-out group-hover:-rotate-[60deg]">
