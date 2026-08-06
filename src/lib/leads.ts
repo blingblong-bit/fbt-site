@@ -1,50 +1,55 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
-import { EMAIL_DISPLAY } from "@/lib/site";
 
 /**
  * Server-side lead delivery for both forms on the site.
  *
- * HOW TO ACTIVATE REAL EMAIL DELIVERY:
- * 1. Create a free account at https://resend.com and verify a sending
- *    domain (or use their onboarding@resend.dev sender for testing).
- * 2. Set these as environment variables in the deployment (Cloudflare /
- *    Lovable project settings — NOT committed to git):
- *      RESEND_API_KEY   (required)
- *      LEAD_EMAIL_FROM  (optional, defaults below)
- *      LEAD_EMAIL_TO    (optional, defaults to EMAIL_DISPLAY in lib/site.ts)
- * 3. That's it — both forms below already call this and will start
- *    delivering real email the moment RESEND_API_KEY is present.
+ * HOW IT WORKS:
+ * - Emails are sent through Resend using the Lovable connector gateway.
+ * - Required env vars (already linked to this project):
+ *     LOVABLE_API_KEY
+ *     RESEND_API_KEY
+ * - Override recipient/sender with env vars if needed:
+ *     LEAD_EMAIL_FROM  (defaults to leads@fitbeyondtherapy.com)
+ *     LEAD_EMAIL_TO    (defaults to fitbeyondtherapy@gmail.com)
  *
- * Until RESEND_API_KEY is set, submissions are logged server-side and the
- * form shows an honest error asking the visitor to call/text instead —
- * it will NOT show a fake success message.
+ * The recipient address is fitbeyondtherapy@gmail.com. The sender domain
+ * (fitbeyondtherapy.com) must be verified in the linked Resend account for
+ * reliable delivery; until then Resend may reject sends from that domain.
  */
-async function sendLeadEmail(subject: string, html: string) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const fromAddress =
-    process.env.LEAD_EMAIL_FROM || "FIT Beyond Therapy <leads@fitbeyondtherapy.com>";
-  const toAddress = process.env.LEAD_EMAIL_TO || EMAIL_DISPLAY;
 
-  if (!apiKey) {
-    console.error("[leads] RESEND_API_KEY is not set — email was NOT sent.", { subject });
+const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
+const DEFAULT_FROM = "FIT Beyond Therapy <leads@fitbeyondtherapy.com>";
+const DEFAULT_TO = "fitbeyondtherapy@gmail.com";
+
+async function sendLeadEmail(subject: string, html: string) {
+  const lovableApiKey = process.env.LOVABLE_API_KEY;
+  const resendApiKey = process.env.RESEND_API_KEY;
+  const fromAddress = process.env.LEAD_EMAIL_FROM || DEFAULT_FROM;
+  const toAddress = process.env.LEAD_EMAIL_TO || DEFAULT_TO;
+
+  if (!lovableApiKey || !resendApiKey) {
+    console.error("[leads] Missing LOVABLE_API_KEY or RESEND_API_KEY — email was NOT sent.", {
+      subject,
+    });
     throw new Error(
       "Email delivery isn't connected yet. Please call or text us directly and we'll get you taken care of.",
     );
   }
 
-  const res = await fetch("https://api.resend.com/emails", {
+  const res = await fetch(`${GATEWAY_URL}/emails`, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
+      Authorization: `Bearer ${lovableApiKey}`,
+      "X-Connection-Api-Key": resendApiKey,
     },
     body: JSON.stringify({ from: fromAddress, to: [toAddress], subject, html }),
   });
 
   if (!res.ok) {
     const body = await res.text().catch(() => "");
-    console.error("[leads] Resend API error", res.status, body);
+    console.error("[leads] Resend gateway error", res.status, body);
     throw new Error("We couldn't deliver your request right now. Please call or text us directly.");
   }
 }
