@@ -24,7 +24,7 @@ export function About({
             About FIT Beyond Therapy
           </p>
           <TitleTag className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Built by coaches who take assessment, progression, and results seriously.
+            Built around assessment, progression, and measurable results.
           </TitleTag>
           <div className="mt-8 space-y-5 text-lg text-foreground/80">
             <p>
@@ -33,9 +33,9 @@ export function About({
             </p>
             <p>
               We work with adults rebuilding strength, individuals seeking structured personal
-              training, and athletes working to improve performance. Our coaching process combines
-              practical training experience, objective assessment, individualized programming, and
-              consistent progression.
+              training, and athletes working to improve performance. Our approach combines practical
+              training experience, objective assessment, individualized programming, and consistent
+              progression.
             </p>
             <p>
               We believe every client should understand what they are working on, why it matters,
@@ -45,17 +45,17 @@ export function About({
 
           <div className="mt-10 grid gap-6 border-t border-border pt-8 sm:grid-cols-2">
             <div>
-              <h3 className="font-display text-lg font-bold">Head Coach & Founder</h3>
+              <h3 className="font-display text-lg font-bold">Founder & Lead Trainer</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                [Name], [Credentials — e.g. CSCS, ATC]. Two decades of coaching experience bridging
-                rehab and performance training. [Short bio placeholder — swap in real copy.]
+                [Name], [Credentials — e.g. CSCS, ATC]. Two decades of training experience bridging
+                rehabilitation and performance. [Short bio placeholder — swap in real copy.]
               </p>
             </div>
             <div>
-              <h3 className="font-display text-lg font-bold">Coaching Team</h3>
+              <h3 className="font-display text-lg font-bold">Training Team</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Certified strength coaches with backgrounds in rehab, athletic training, and sport
-                performance. Space reserved here for additional staff bios.
+                Qualified trainers with backgrounds in rehabilitation, strength development, and
+                sport performance. Space reserved here for additional staff bios.
               </p>
             </div>
           </div>

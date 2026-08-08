@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteNav } from "../components/site/SiteNav";
 import { SiteFooter } from "../components/site/SiteFooter";
+import { HashScroll } from "../components/site/HashScroll";
 import { PHONE_TEL, ADDRESS_LINE1 } from "../lib/site";
 
 function NotFoundComponent() {
@@ -164,6 +165,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
+        <HashScroll />
         <SiteNav />
         <main className="flex-1">
           <Outlet />

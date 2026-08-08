@@ -3,14 +3,6 @@ import { Reveal } from "../Reveal";
 
 const PATHS = [
   {
-    icon: "PT",
-    title: "Personal Training",
-    body: "Build strength, improve movement, increase confidence, and train with a structured plan designed specifically for you.",
-    cta: "Explore Personal Training",
-    to: "/services" as const,
-    hash: "personal-training",
-  },
-  {
     icon: "PR",
     title: "Post-Rehab Training",
     body: "Finished physical therapy but not ready to return to unrestricted training? We help bridge the gap between basic rehabilitation and full strength.",
@@ -21,9 +13,17 @@ const PATHS = [
   {
     icon: "FP",
     title: "FIT Beyond Performance",
-    body: "Individual, small-group, and team athletic training for middle-school, high-school, and competitive athletes — backed by ForceDecks performance testing.",
+    body: "Individual, small-group, and team performance training for middle-school, high-school, and competitive athletes — focused on strength, speed, power, movement, and measurable development.",
     cta: "Explore FIT Beyond Performance",
     to: "/fit-beyond-performance" as const,
+  },
+  {
+    icon: "PT",
+    title: "Personal Training",
+    body: "Build strength, improve movement, increase confidence, and train with a structured plan designed specifically for you.",
+    cta: "Explore Personal Training",
+    to: "/services" as const,
+    hash: "personal-training",
   },
 ];
 

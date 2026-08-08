@@ -2,12 +2,6 @@ import { Reveal } from "../Reveal";
 
 const SERVICES = [
   {
-    id: "personal-training",
-    icon: "PT",
-    title: "Personal Training",
-    body: "Individualized strength, mobility, and conditioning for adults with specific goals — real-world movement patterns, not isolated machine work, with accountability built in.",
-  },
-  {
     id: "post-rehab",
     icon: "PR",
     title: "Post-Rehab Training",
@@ -17,7 +11,13 @@ const SERVICES = [
     id: "fit-beyond-performance",
     icon: "FP",
     title: "FIT Beyond Performance",
-    body: "Individual, small-group, and team athletic training for middle-school through competitive athletes — speed, strength, power, and conditioning, backed by ForceDecks performance testing.",
+    body: "Individual, small-group, and team performance training for middle-school, high-school, and competitive athletes — focused on strength, speed, power, movement, and measurable development.",
+  },
+  {
+    id: "personal-training",
+    icon: "PT",
+    title: "Personal Training",
+    body: "Individualized strength, mobility, and conditioning for adults with specific goals — real-world movement patterns, not isolated machine work, with accountability built in.",
   },
 ];
 
