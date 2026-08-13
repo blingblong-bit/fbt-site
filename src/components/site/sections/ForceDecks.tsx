@@ -1,17 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-  Cell,
-} from "recharts";
 import { Reveal } from "../Reveal";
 import { AsymmetryIcon, BalanceIcon, StrengthIcon, PowerIcon } from "../ValdIcons";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
+import valdVersatilityImage from "@/assets/vald-versatility-image";
 
 const METRICS = [
   { label: "Asymmetry", Icon: AsymmetryIcon },
@@ -29,13 +20,6 @@ const CAN_ASSESS = [
   "Braking and landing ability",
   "Changes over time",
 ];
-
-const SAMPLE = [
-  { leg: "Left Leg", force: 1420, fill: "oklch(0.5 0.21 258)" },
-  { leg: "Right Leg", force: 1685, fill: "oklch(0.7 0.132 232)" },
-];
-
-const asymmetry = Math.round(((SAMPLE[1].force - SAMPLE[0].force) / SAMPLE[1].force) * 100);
 
 export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h2" }) {
   return (
@@ -56,7 +40,8 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
           </div>
           <p className="mt-6 text-lg text-foreground/80">
             ForceDecks technology allows us to objectively evaluate how you produce and absorb
-            force.
+            force — whether we're working with an athlete, a post-rehab client, or an adult building
+            strength and confidence.
           </p>
 
           <div className="mt-8">
@@ -74,9 +59,8 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
           </div>
 
           <p className="mt-6 text-foreground/80">
-            The data gives our coaches a clearer starting point and helps us determine whether
-            training is producing meaningful results. Testing is available for athletes, post-rehab
-            clients, personal-training clients, and teams.
+            The data gives our coaches a clearer starting point, helps guide training decisions,
+            and gives us another way to measure meaningful change over time.
           </p>
 
           <div className="mt-8">
@@ -117,85 +101,23 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-elevated sm:p-8">
-            <div
-              aria-hidden
-              className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rotate-45 rounded-2xl border border-primary/15"
+          <figure className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
+            <img
+              src={valdVersatilityImage}
+              alt="Client completing a ForceDecks assessment at FIT Beyond Therapy"
+              className="aspect-[4/5] w-full object-cover object-center"
             />
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-mono text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-                  Sample: Countermovement Jump
-                </p>
-                <p className="mt-1 text-lg font-bold">Peak Force — Left vs Right</p>
-              </div>
-              <div className="text-right">
-                <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-                  Asymmetry
-                </div>
-                <div className="stat-number text-3xl text-accent">{Math.abs(asymmetry)}%</div>
-              </div>
-            </div>
-
-            <div className="mt-6 h-64 w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={SAMPLE} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
-                  <CartesianGrid
-                    strokeDasharray="3 3"
-                    stroke="oklch(0.9 0.005 260)"
-                    vertical={false}
-                  />
-                  <XAxis
-                    dataKey="leg"
-                    tick={{ fontSize: 12, fill: "oklch(0.4 0.01 260)" }}
-                    axisLine={false}
-                    tickLine={false}
-                  />
-                  <YAxis
-                    tick={{ fontSize: 11, fill: "oklch(0.5 0.01 260)" }}
-                    axisLine={false}
-                    tickLine={false}
-                    unit="N"
-                  />
-                  <Tooltip
-                    cursor={{ fill: "oklch(0.95 0.005 260 / 0.5)" }}
-                    contentStyle={{
-                      borderRadius: 8,
-                      border: "1px solid oklch(0.9 0.005 260)",
-                      fontSize: 12,
-                    }}
-                    formatter={(v: number) => [`${v} N`, "Peak Force"]}
-                  />
-                  <Bar dataKey="force" radius={[6, 6, 0, 0]}>
-                    {SAMPLE.map((entry, i) => (
-                      <Cell key={i} fill={entry.fill} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-
-            <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-border pt-4 text-xs">
-              <span className="inline-flex items-center gap-2">
-                <span
-                  className="h-2.5 w-2.5 rotate-45"
-                  style={{ background: "oklch(0.5 0.21 258)" }}
-                />
-                Left Leg — 1,420 N
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span
-                  className="h-2.5 w-2.5 rotate-45"
-                  style={{ background: "oklch(0.7 0.132 232)" }}
-                />
-                Right Leg — 1,685 N
-              </span>
-            </div>
-
-            <p className="mt-4 text-xs italic text-muted-foreground">
-              Example assessment display. Individual results and selected tests vary by client.
-            </p>
-          </div>
+            <figcaption className="border-t border-border bg-card p-5 sm:p-6">
+              <p className="font-mono text-[11px] font-semibold uppercase tracking-widest text-accent">
+                One system, multiple applications
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/75">
+                The same objective testing tools can support athletic development, post-rehab
+                progression, and general strength training — with the assessment selected around the
+                person and the goal.
+              </p>
+            </figcaption>
+          </figure>
         </Reveal>
       </div>
     </section>
