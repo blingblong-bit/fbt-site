@@ -34,16 +34,16 @@ export function Hero() {
         <div className="lg:col-span-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <span className="h-2 w-2 rotate-45 bg-accent" />
-            Personalized Training in Tullahoma, TN
+            Assessment-Driven Training in Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             Training built around where you are —{" "}
             <span className="text-primary">and where you want to go.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            FIT Beyond Therapy provides personalized strength training, post-rehab progression,
-            athletic performance development, and objective performance testing for adults and
-            athletes in Tullahoma, Tennessee.
+            FIT Beyond Therapy combines individualized strength training, post-rehab progression,
+            athletic development, and objective performance testing to help adults and athletes
+            build strength, capacity, and measurable progress.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
