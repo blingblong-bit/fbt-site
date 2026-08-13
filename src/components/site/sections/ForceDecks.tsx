@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Reveal } from "../Reveal";
 import { AsymmetryIcon, BalanceIcon, StrengthIcon, PowerIcon } from "../ValdIcons";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
-import valdVersatilityImage from "@/assets/vald-versatility-image";
+import forcedecksAsset from "@/assets/forcedecks-assessment.png.asset.json";
 
 const METRICS = [
   { label: "Asymmetry", Icon: AsymmetryIcon },
@@ -103,7 +103,7 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
         <Reveal delay={120}>
           <figure className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
             <img
-              src={valdVersatilityImage}
+              src={forcedecksAsset.url}
               alt="Client completing a ForceDecks assessment at FIT Beyond Therapy"
               className="aspect-[4/5] w-full object-cover object-center"
             />
