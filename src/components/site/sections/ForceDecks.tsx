@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Reveal } from "../Reveal";
 import { AsymmetryIcon, BalanceIcon, StrengthIcon, PowerIcon } from "../ValdIcons";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
-import valdVersatilityImage from "@/assets/vald-versatility-image";
+import forcedecksAsset from "@/assets/forcedecks-assessment.png.asset.json";
 
 const METRICS = [
   { label: "Asymmetry", Icon: AsymmetryIcon },
