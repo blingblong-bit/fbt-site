@@ -22,6 +22,7 @@ import coachGuidedTraining from "./coach-guided-training.jpg.asset.json";
 import trainingCoachSenior from "./training-coach-senior.jpg.asset.json";
 import wallballTraining from "./wallball-training.jpg.asset.json";
 import resistanceStep from "./resistance-step.jpg.asset.json";
+import personalTrainingSession from "./personal-training-session.jpg.asset.json";
 
 export const photos = {
   hero: coachGuidedTraining.url,
@@ -30,4 +31,5 @@ export const photos = {
   resultsBackdrop: wallballTraining.url,
   athleticPerformance: resistanceStep.url,
   doctorReferralBackdrop: coachGuidedTraining.url,
+  personalTraining: personalTrainingSession.url,
 } as const;

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "../Reveal";
 import { PlaceholderImage } from "../PlaceholderImage";
+import { photos } from "@/assets/photos";
 
 const FOCUS_AREAS = [
   "Building strength",
@@ -35,6 +36,7 @@ export function PersonalTraining() {
               label="Coach and client during a personal training session"
               aspect="aspect-[4/5]"
               className="shadow-elevated"
+              src={photos.personalTraining}
             />
           </Reveal>
 
