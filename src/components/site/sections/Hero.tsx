@@ -75,7 +75,7 @@ export function Hero() {
           />
           <PlaceholderImage
             label="Coach working one-on-one with a client on the training floor"
-            aspect="aspect-[5/4]"
+            aspect="aspect-[4/5]"
             className="relative z-10 shadow-elevated"
             src={photos.hero}
           />
