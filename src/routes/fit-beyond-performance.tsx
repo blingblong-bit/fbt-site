@@ -14,7 +14,6 @@ import { PlaceholderImage } from "@/components/site/PlaceholderImage";
 import { Reveal } from "@/components/site/Reveal";
 import { AthleteInquiryForm } from "@/components/site/AthleteInquiryForm";
 import { BackdropImage } from "@/components/site/BackdropImage";
-import { Results } from "@/components/site/sections/Results";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
 import { photos } from "@/assets/photos";
 
