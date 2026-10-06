@@ -15,7 +15,7 @@ export function About({
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-28">
         <Reveal className="lg:col-span-5">
           <PlaceholderImage
-            label="Phillip Hill, Founder & Lead Trainer, standing on the FIT training floor"
+            label="Phillip Hill, Founder, standing on the FIT training floor"
             src={phillipHillPortrait.url}
             aspect="aspect-[4/5]"
             className="shadow-elevated"
