@@ -114,7 +114,7 @@ export function Hero() {
                   className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 motion-safe:lg:group-hover:scale-[1.02] ${t.pos}`}
                 />
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/65 to-transparent" />
-                <figcaption className="absolute bottom-2 left-2.5 whitespace-nowrap text-[11px] font-semibold uppercase tracking-wider text-white sm:text-xs">
+                <figcaption className="absolute bottom-2 left-2 whitespace-nowrap text-[9.5px] font-semibold uppercase tracking-wide sm:left-2.5 sm:tracking-wider text-white sm:text-xs">
                   {t.label}
                 </figcaption>
               </figure>
