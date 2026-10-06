@@ -73,7 +73,7 @@ export function SiteFooter() {
             </h4>
             <ul className="mt-4 space-y-1 text-sm text-primary-foreground/70">
               <li>Mon–Fri: 9:00a – 6:45p</li>
-              <li>Sat: 8:00a – 12:00p</li>
+              <li>Sat: Closed</li>
               <li>Sun: Closed</li>
             </ul>
             <p className="mt-6 text-sm text-primary-foreground/70">
