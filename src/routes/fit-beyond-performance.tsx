@@ -14,6 +14,7 @@ import { PlaceholderImage } from "@/components/site/PlaceholderImage";
 import { Reveal } from "@/components/site/Reveal";
 import { AthleteInquiryForm } from "@/components/site/AthleteInquiryForm";
 import { BackdropImage } from "@/components/site/BackdropImage";
+import { TrainingVideos } from "@/components/site/TrainingVideos";
 import fdLogo from "@/assets/vald/FD_Logo_RGB_Full_Rev.svg";
 import { photos } from "@/assets/photos";
 
@@ -291,6 +292,8 @@ function FitBeyondPerformancePage() {
           </div>
         </div>
       </section>
+
+      <TrainingVideos />
 
       {/* 5. Performance testing — major section, not a competing tab */}
       <section id="testing" className="bg-background">
