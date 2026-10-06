@@ -49,7 +49,7 @@ export function About({
             <div>
               <h3 className="font-display text-lg font-bold">Phillip Hill</h3>
               <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-accent">
-                Founder & Lead Trainer
+                Founder
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Phillip has spent decades helping people build strength, improve movement, and
