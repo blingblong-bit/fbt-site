@@ -29,7 +29,7 @@ const VIDEOS: Video[] = [
     src: teamVideo.url,
     ratio: 1188 / 2026,
     cardClass: "aspect-[4/5] lg:col-span-3 lg:aspect-auto lg:h-[520px]",
-    posterClass: "object-[center_40%]",
+    posterClass: "object-[center_22%]",
   },
   {
     id: "speed",
