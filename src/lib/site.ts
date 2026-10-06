@@ -12,6 +12,6 @@ export const PHONE_DISPLAY = "(931) 224-6244";
 export const PHONE_TEL = "tel:+19312246244";
 export const EMAIL_DISPLAY = "info@fitbeyondtherapy.com";
 export const EMAIL_HREF = "mailto:info@fitbeyondtherapy.com";
-export const ADDRESS_LINE1 = "449 W Lincoln St";
+export const ADDRESS_LINE1 = "461 W Lincoln Street";
 export const ADDRESS_LINE2 = "Tullahoma, TN 37388";
 export const FBP_URL = "https://fitbeyondplus.com";
