@@ -9,6 +9,7 @@ export function ProblemGap() {
       <BackdropImage
         label="client bridging rehab to strength"
         overlay="soft"
+        imageClassName="object-[center_15%]"
         src={photos.problemGapBackdrop}
       />
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">

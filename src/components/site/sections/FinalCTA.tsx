@@ -14,7 +14,12 @@ import {
 export function FinalCTA() {
   return (
     <section className="relative bg-primary text-primary-foreground">
-      <BackdropImage label="client mid-session" overlay="dark" src={photos.finalCtaBackdrop} />
+      <BackdropImage
+        label="client mid-session"
+        overlay="dark"
+        imageClassName="object-[center_18%]"
+        src={photos.finalCtaBackdrop}
+      />
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-28">
         <Reveal>
           <h2 className="text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">

@@ -390,7 +390,7 @@ function FitBeyondPerformancePage() {
             </div>
             <PlaceholderImage
               label="Athlete completing a jump assessment on VALD ForceDecks plates"
-              aspect="aspect-[3/4]"
+              aspect="aspect-[939/1676]"
               className="mt-6 shadow-card"
               src={photos.performanceForceDecksJump}
             />
