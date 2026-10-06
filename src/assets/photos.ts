@@ -28,8 +28,14 @@ import performanceForceDecksJump from "./performance-forcedecks-jump.png.asset.j
 import performanceGroupDemonstration from "./performance-group-demonstration.png.asset.json";
 import performanceFacilityGroup from "./performance-facility-group.png.asset.json";
 import performanceVertimaxJump from "./performance-vertimax-jump.png.asset.json";
+import heroPersonalTraining from "./hero-personal-training.png.asset.json";
+import heroActiveAging from "./hero-active-aging.png.asset.json";
+import heroIndividualized from "./hero-individualized.png.asset.json";
 
 export const photos = {
+  heroPersonalTraining: heroPersonalTraining.url,
+  heroActiveAging: heroActiveAging.url,
+  heroIndividualized: heroIndividualized.url,
   hero: coachGuidedTraining.url,
   problemGapBackdrop: trainingCoachSenior.url,
   finalCtaBackdrop: coachGuidedTraining.url,

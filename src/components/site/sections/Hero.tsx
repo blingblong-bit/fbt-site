@@ -1,7 +1,33 @@
 import { Link } from "@tanstack/react-router";
-import { PlaceholderImage } from "../PlaceholderImage";
 import { useScrollY } from "@/hooks/useScrollY";
 import { photos } from "@/assets/photos";
+
+const TILES = [
+  {
+    label: "Personal Training",
+    src: photos.heroPersonalTraining,
+    pos: "object-[60%_30%]",
+    alt: "Trainer demonstrating a medicine ball movement to an adult client",
+  },
+  {
+    label: "Athletic Performance",
+    src: photos.performanceGroupDemonstration,
+    pos: "object-[50%_35%]",
+    alt: "Trainer demonstrating a drill to a group of young athletes",
+  },
+  {
+    label: "Active Aging",
+    src: photos.heroActiveAging,
+    pos: "object-[45%_30%]",
+    alt: "Older adult performing a resistance band row while the trainer observes",
+  },
+  {
+    label: "Individualized Coaching",
+    src: photos.heroIndividualized,
+    pos: "object-[55%_38%]",
+    alt: "Trainer guiding a pregnant client through a banded lunge step",
+  },
+];
 
 export function Hero() {
   const y = useScrollY();
@@ -41,9 +67,9 @@ export function Hero() {
             <span className="text-primary">and where you want to go.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            FIT Beyond Therapy combines individualized strength training, post-rehab progression,
-            athletic development, and objective performance testing to help adults and athletes
-            build strength, capacity, and measurable progress.
+            FIT Beyond Therapy provides one-on-one personal training, post-rehab strength
+            development, athletic performance coaching, and objective testing for adults and
+            athletes at every starting point.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
@@ -60,7 +86,7 @@ export function Hero() {
             </Link>
           </div>
           <p className="mt-6 text-sm font-medium text-muted-foreground">
-            Individualized coaching. Objective assessments. Measurable progress.
+            For everyday strength, post-rehab progress, active aging, and athletic performance.
           </p>
         </div>
 
@@ -73,12 +99,27 @@ export function Hero() {
             aria-hidden
             className="pointer-events-none absolute -bottom-6 -right-6 -z-0 h-32 w-32 rotate-45 rounded-xl bg-primary/10"
           />
-          <PlaceholderImage
-            label="Coach working one-on-one with a client on the training floor"
-            aspect="aspect-[4/5]"
-            className="relative z-10 shadow-elevated"
-            src={photos.hero}
-          />
+          <div className="relative z-10 grid aspect-[4/5] grid-cols-2 grid-rows-2 gap-3 overflow-hidden rounded-2xl shadow-elevated lg:grid-cols-[58fr_42fr] lg:grid-rows-3">
+            {TILES.map((t, i) => (
+              <figure
+                key={t.label}
+                className={`group relative overflow-hidden rounded-xl bg-muted ${i === 0 ? "lg:row-span-3" : ""}`}
+              >
+                <img
+                  src={t.src}
+                  alt={t.alt}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  fetchPriority={i === 0 ? "high" : "auto"}
+                  decoding="async"
+                  className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 motion-safe:lg:group-hover:scale-[1.02] ${t.pos}`}
+                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/65 to-transparent" />
+                <figcaption className="absolute bottom-2 left-2 whitespace-nowrap text-[9.5px] font-semibold uppercase tracking-wide sm:left-2.5 sm:tracking-wider text-white sm:text-xs">
+                  {t.label}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </div>
     </section>
