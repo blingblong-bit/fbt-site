@@ -45,17 +45,25 @@ export function About({
 
           <div className="mt-10 grid gap-6 border-t border-border pt-8 sm:grid-cols-2">
             <div>
-              <h3 className="font-display text-lg font-bold">Founder & Lead Trainer</h3>
+              <h3 className="font-display text-lg font-bold">Phillip Hill</h3>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-accent">
+                Founder & Lead Trainer
+              </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                [Name], [Credentials — e.g. CSCS, ATC]. Two decades of training experience bridging
-                rehabilitation and performance. [Short bio placeholder — swap in real copy.]
+                Phillip has spent decades helping people build strength, improve movement, and
+                return to the activities that matter to them. Before creating FIT Beyond Therapy, he
+                worked in clinical and rehabilitation environments, where he saw the gap between
+                finishing treatment and feeling fully prepared for everyday life, exercise, or
+                sport. FIT was built to help close that gap through individualized training,
+                objective assessment, and consistent progression.
               </p>
             </div>
             <div>
               <h3 className="font-display text-lg font-bold">Training Team</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Qualified trainers with backgrounds in rehabilitation, strength development, and
-                sport performance. Space reserved here for additional staff bios.
+                FIT's trainers work with adults and athletes across a wide range of ages, abilities,
+                and goals. Every trainer follows the same assessment-led approach while adapting the
+                program to the individual.
               </p>
             </div>
           </div>
