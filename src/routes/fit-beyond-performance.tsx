@@ -426,9 +426,8 @@ function FitBeyondPerformancePage() {
         </div>
       </section>
 
-      {/* 7. Parent FAQ */}
 
-      {/* 8. Parent FAQ */}
+      {/* 7. Parent FAQ */}
       <section className="bg-surface">
         <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <Reveal className="text-center">
@@ -458,7 +457,7 @@ function FitBeyondPerformancePage() {
         </div>
       </section>
 
-      {/* 9. Athlete inquiry form */}
+      {/* 8. Athlete inquiry form */}
       <section id="assessment" className="bg-background">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
