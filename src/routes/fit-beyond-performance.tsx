@@ -182,27 +182,6 @@ function FitBeyondPerformancePage() {
             <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
               Stronger. Faster. Better prepared to compete.
             </h1>
-            <p className="mt-6 text-lg text-foreground/80">
-              Individual, small-group, and team athletic training — built on real coaching and
-              backed by ForceDecks performance testing. For middle-school, high-school, and
-              competitive athletes in Tullahoma, TN.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                to="/fit-beyond-performance"
-                hash="assessment"
-                className="inline-flex items-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
-              >
-                Request an Athlete Assessment
-              </Link>
-              <Link
-                to="/fit-beyond-performance"
-                hash="testing"
-                className="inline-flex items-center rounded-md border border-border bg-card px-6 py-3 text-base font-semibold text-primary transition-colors hover:bg-surface"
-              >
-                Explore Performance Testing
-              </Link>
-            </div>
           </div>
           <PlaceholderImage
             label="Athlete training on the FIT Beyond Therapy floor"
@@ -297,18 +276,17 @@ function FitBeyondPerformancePage() {
               </Reveal>
             ))}
           </div>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <div className="mt-8 grid gap-6 items-start md:grid-cols-5">
             <PlaceholderImage
               label="Athlete performing an explosive jump on a VertiMax platform"
               aspect="aspect-[4/3]"
-              className="shadow-card"
+              className="shadow-card md:col-span-3"
               src={photos.performanceVertimaxJump}
             />
             <PlaceholderImage
               label="Trainer demonstrating movement technique to a group of young athletes"
-              aspect="aspect-[4/3]"
-              className="shadow-card"
-              imageClassName="object-[center_62%]"
+              aspect="aspect-[3/4]"
+              className="shadow-card md:col-span-2"
               src={photos.performanceGroupDemonstration}
             />
           </div>
@@ -413,9 +391,8 @@ function FitBeyondPerformancePage() {
             </div>
             <PlaceholderImage
               label="Athlete completing a jump assessment on VALD ForceDecks plates"
-              aspect="aspect-[16/9]"
+              aspect="aspect-[3/4]"
               className="mt-6 shadow-card"
-              imageClassName="object-[center_58%]"
               src={photos.performanceForceDecksJump}
             />
           </Reveal>
@@ -450,8 +427,7 @@ function FitBeyondPerformancePage() {
         </div>
       </section>
 
-      {/* 7. Results / testimonials */}
-      <Results />
+      {/* 7. Parent FAQ */}
 
       {/* 8. Parent FAQ */}
       <section className="bg-surface">
