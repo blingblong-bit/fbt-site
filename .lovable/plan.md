@@ -18,7 +18,7 @@ The page has four spots without real photos:
 | Coach guiding three athletes on step platforms (06:45) | Page hero — replaces the step photo in the `athleticPerformance` slot |
 | Athlete jumping on VALD ForceDecks plates | Testing section inline photo |
 | Athlete jumping on the VertiMax platform | "Sprint and jump training in progress" |
-| Coach demonstrating movement to a group of young athletes | "Coach working directly with an athlete" |
+| Coach demonstrating movement to a group of young athletes | Second "What We Develop" photo, with group-demonstration alt text |
 | Trainer coaching a group in the gym with blue walls | Facility section full-bleed backdrop |
 
 The step photo currently in the hero stays in use for the ProblemGap and FinalCTA backdrops; nothing else changes on other pages.
@@ -27,7 +27,7 @@ The step photo currently in the hero stays in use for the ProblemGap and FinalCT
 
 1. Upload all five photos to the CDN and write asset pointer files in `src/assets/`.
 2. Update `src/assets/photos.ts` with slots for the new shots (hero slot repointed, four new slots).
-3. Update `src/routes/fit-beyond-performance.tsx` to pass each photo into its placeholder/backdrop.
-4. Verify in the browser that all five photos render, the backdrop text stays legible, and the page looks right on desktop and mobile widths.
+3. Update `src/routes/fit-beyond-performance.tsx` to pass each photo into its placeholder/backdrop, preserve the existing dark facility overlay, and use focal positioning for the hero and facility images without changing the layout.
+4. Verify in the browser that all five photos render, the facility text stays legible, and the hero and facility crops keep the coach and athletes visible on desktop and mobile widths.
 
 No copy, layout, or styling changes beyond the photo slots.
