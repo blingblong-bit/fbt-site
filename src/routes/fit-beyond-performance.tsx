@@ -33,6 +33,8 @@ export const Route = createFileRoute("/fit-beyond-performance")({
         content: "Stronger. Faster. Better prepared to compete. Tullahoma, TN.",
       },
       { property: "og:url", content: absoluteUrl("/fit-beyond-performance") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/fit-beyond-performance") }],
   }),
@@ -206,6 +208,7 @@ function FitBeyondPerformancePage() {
             label="Athlete training on the FIT Beyond Therapy floor"
             aspect="aspect-[4/5]"
             className="shadow-elevated"
+            imageClassName="object-[center_58%] sm:object-[center_55%]"
             src={photos.athleticPerformance}
           />
         </div>
@@ -296,14 +299,17 @@ function FitBeyondPerformancePage() {
           </div>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             <PlaceholderImage
-              label="Sprint and jump training in progress"
+              label="Athlete performing an explosive jump on a VertiMax platform"
               aspect="aspect-[4/3]"
               className="shadow-card"
+              src={photos.performanceVertimaxJump}
             />
             <PlaceholderImage
-              label="Coach working directly with an athlete"
+              label="Trainer demonstrating movement technique to a group of young athletes"
               aspect="aspect-[4/3]"
               className="shadow-card"
+              imageClassName="object-[center_62%]"
+              src={photos.performanceGroupDemonstration}
             />
           </div>
         </div>
@@ -406,9 +412,11 @@ function FitBeyondPerformancePage() {
               </p>
             </div>
             <PlaceholderImage
-              label="Athlete on ForceDecks plates with coach reading the screen"
+              label="Athlete completing a jump assessment on VALD ForceDecks plates"
               aspect="aspect-[16/9]"
               className="mt-6 shadow-card"
+              imageClassName="object-[center_58%]"
+              src={photos.performanceForceDecksJump}
             />
           </Reveal>
         </div>
@@ -419,6 +427,8 @@ function FitBeyondPerformancePage() {
         <BackdropImage
           label="new equipment and renovated training space, wide shot"
           overlay="primary"
+          imageClassName="object-[center_62%] sm:object-[center_58%]"
+          src={photos.performanceFacilityGroup}
         />
         <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <Reveal>
