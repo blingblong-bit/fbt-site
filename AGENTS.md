@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Photo-bearing site components accept optional image focal-position classes so crop-sensitive subjects remain visible without changing section layouts.
