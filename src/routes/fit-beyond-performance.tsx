@@ -50,12 +50,12 @@ const WHO_WE_TRAIN = [
     d: "Develop greater strength, power, speed, and physical preparation for competition.",
   },
   {
-    t: "Individual Coaching",
-    d: "Targeted programming and objective testing to address specific performance needs.",
+    t: "College Athletes",
+    d: "Build the strength, power, and durability needed to compete at the next level — with programming that works around the college schedule.",
   },
   {
-    t: "Team Programs",
-    d: "A structured strength, speed, and conditioning program designed around the needs of the full roster.",
+    t: "Professional Athletes",
+    d: "Advanced assessment and individualized development for athletes competing at the professional level.",
   },
 ];
 
