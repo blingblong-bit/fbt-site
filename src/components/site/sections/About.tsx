@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import phillipHillPortrait from "../../assets/phillip-hill-portrait.png.asset.json";
+import phillipHillPortrait from "../../../assets/phillip-hill-portrait.png.asset.json";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Reveal } from "../Reveal";
 
