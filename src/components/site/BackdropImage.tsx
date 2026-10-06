@@ -2,6 +2,7 @@ interface BackdropImageProps {
   label: string;
   overlay?: "primary" | "dark" | "soft";
   className?: string;
+  imageClassName?: string;
   src?: string;
 }
 
@@ -9,6 +10,7 @@ export function BackdropImage({
   label,
   overlay = "primary",
   className = "",
+  imageClassName = "",
   src,
 }: BackdropImageProps) {
   const gradient =
@@ -24,7 +26,11 @@ export function BackdropImage({
       aria-hidden="true"
     >
       {src ? (
-        <img src={src} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={src}
+          alt=""
+          className={`absolute inset-0 h-full w-full object-cover ${imageClassName}`}
+        />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center bg-surface-strong">
           <div className="absolute inset-0 text-muted-foreground opacity-40 [background-image:linear-gradient(45deg,transparent_49%,currentColor_49%,currentColor_51%,transparent_51%)] [background-size:16px_16px]" />

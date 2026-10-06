@@ -2,6 +2,7 @@ interface PlaceholderImageProps {
   label: string;
   aspect?: string;
   className?: string;
+  imageClassName?: string;
   tone?: "light" | "dark";
   src?: string;
 }
@@ -14,6 +15,7 @@ export function PlaceholderImage({
   label,
   aspect = "aspect-[4/3]",
   className = "",
+  imageClassName = "",
   tone = "light",
   src,
 }: PlaceholderImageProps) {
@@ -22,7 +24,11 @@ export function PlaceholderImage({
       <div
         className={`relative ${aspect} w-full overflow-hidden rounded-2xl border border-border ${className}`}
       >
-        <img src={src} alt={label} className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={src}
+          alt={label}
+          className={`absolute inset-0 h-full w-full object-cover ${imageClassName}`}
+        />
       </div>
     );
   }
