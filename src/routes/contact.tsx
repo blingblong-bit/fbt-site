@@ -77,7 +77,7 @@ function ContactPage() {
 
               <h2 className="mt-8 font-display text-xl font-bold">Hours</h2>
               <ul className="mt-3 space-y-1 text-foreground/85">
-                <li>Mon–Fri: 6:00a – 7:00p</li>
+                <li>Mon–Fri: 9:00a – 6:45p</li>
                 <li>Sat: 8:00a – 12:00p</li>
                 <li>Sun: Closed</li>
               </ul>
