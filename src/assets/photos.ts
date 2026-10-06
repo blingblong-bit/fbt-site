@@ -32,7 +32,7 @@ import performanceVertimaxJump from "./performance-vertimax-jump.png.asset.json"
 export const photos = {
   hero: coachGuidedTraining.url,
   problemGapBackdrop: trainingCoachSenior.url,
-  finalCtaBackdrop: wallballTraining.url,
+  finalCtaBackdrop: coachGuidedTraining.url,
   resultsBackdrop: wallballTraining.url,
   athleticPerformance: performanceStepCoaching.url,
   performanceForceDecksJump: performanceForceDecksJump.url,
