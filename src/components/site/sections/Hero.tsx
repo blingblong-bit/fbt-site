@@ -60,7 +60,7 @@ export function Hero() {
         <div className="text-center lg:col-span-6 lg:text-left">
           <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             The first thing we identify is{" "}
-            <span className="mx-auto block w-fit lg:mx-0">
+            <span className="mx-auto block w-full max-w-md sm:max-w-lg lg:mx-0 lg:max-w-xl">
               <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
                 <span className="text-[0.8em] font-bold text-primary/70">“</span>
                 THE GAP
@@ -85,12 +85,12 @@ export function Hero() {
                   <path d="m6 13 6 6 6-6" />
                 </svg>
               </span>
-              <span aria-hidden="true" className="mt-1 flex items-center gap-2">
-                <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
-                <span className="h-px flex-1 bg-primary/40" />
-                <span className="w-6 shrink-0 sm:w-8" />
-                <span className="h-px flex-1 bg-primary/40" />
-                <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
+              <span aria-hidden="true" className="mt-1.5 flex items-center gap-2 sm:gap-3">
+                <span className="h-2 w-2 shrink-0 rotate-45 rounded-[2px] bg-accent" />
+                <span className="h-1 flex-1 rounded-full bg-primary/75" />
+                <span className="w-14 shrink-0 sm:w-20" />
+                <span className="h-1 flex-1 rounded-full bg-primary/75" />
+                <span className="h-2 w-2 shrink-0 rotate-45 rounded-[2px] bg-accent" />
               </span>
               <span className="mt-3 hidden items-baseline justify-between gap-6 text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex">
                 <span className="whitespace-nowrap">Where are you?</span>
@@ -99,7 +99,7 @@ export function Hero() {
             </span>
             <span
               aria-hidden="true"
-              className="mx-auto mt-3 grid w-full grid-cols-[minmax(0,1fr)_24px_minmax(0,1fr)] items-baseline text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:grid-cols-[minmax(0,1fr)_32px_minmax(0,1fr)] sm:text-[11px] lg:hidden"
+              className="mx-auto mt-3 grid w-full grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)] items-baseline text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)] sm:text-[11px] lg:hidden"
             >
               <span className="text-center text-balance">Where are you?</span>
               <span />
