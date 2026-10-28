@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
+  absoluteUrl,
   PHONE_DISPLAY,
   PHONE_TEL,
   EMAIL_DISPLAY,
@@ -24,11 +25,11 @@ export const Route = createFileRoute("/contact")({
         content:
           "Talk with the FIT team in Tullahoma, TN about post-rehab training, personal training, active aging, or athletic performance. Share your goals and starting point.",
       },
-      { property: "og:url", content: "https://bridge-to-strength.lovable.app/contact" },
+      { property: "og:url", content: absoluteUrl("/contact") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
   }),
   component: ContactPage,
 });

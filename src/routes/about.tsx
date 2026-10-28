@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { About } from "@/components/site/sections/About";
 import { FitBeyondPlus } from "@/components/site/sections/FitBeyondPlus";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
@@ -21,11 +22,11 @@ export const Route = createFileRoute("/about")({
         content:
           "Learn why Phillip Hill built FIT Beyond Therapy to bridge the gap between rehabilitation and real life, with individualized training in Tullahoma, TN.",
       },
-      { property: "og:url", content: "https://bridge-to-strength.lovable.app/about" },
+      { property: "og:url", content: absoluteUrl("/about") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/about" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/about") }],
   }),
   component: AboutPage,
 });

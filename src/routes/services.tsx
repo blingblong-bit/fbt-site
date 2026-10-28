@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { Services } from "@/components/site/sections/Services";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 import { ProblemGap } from "@/components/site/sections/ProblemGap";
@@ -22,11 +23,11 @@ export const Route = createFileRoute("/services")({
         content:
           "Strength and movement training for life, work, recreation, and sport. Explore post-rehab training, personal training, active aging, and athletic performance in Tullahoma, TN.",
       },
-      { property: "og:url", content: "https://bridge-to-strength.lovable.app/services" },
+      { property: "og:url", content: absoluteUrl("/services") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/services" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/services") }],
   }),
   component: ServicesPage,
 });
