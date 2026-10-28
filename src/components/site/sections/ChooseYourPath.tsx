@@ -38,10 +38,6 @@ export function ChooseYourPath() {
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
             Find the right place to start.
           </h2>
-          <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-            You do not need to have the answer before you contact us. Tell us where you are now and
-            what you want to get back to, and we will help you choose the right next step.
-          </p>
         </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
