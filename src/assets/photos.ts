@@ -7,7 +7,7 @@
  *
  * Slot assignments (per the site rebuild plan):
  * - hero .................. strongest shot, both faces visible, clear coaching engagement
- * - problemGapBackdrop .... older client w/ ankle strap + resistance band, hands-on coaching
+ * - problemGapBackdrop .... older client resistance-band training (backdrop for the post-rehab section)
  * - finalCtaBackdrop ...... reuses the hero shot under a heavy dark overlay
  * - resultsBackdrop ....... wide action shot (reused; sits under a heavy primary overlay)
  * - athleticPerformance ... most visibly athletic shot of the four
