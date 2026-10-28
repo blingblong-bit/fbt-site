@@ -45,11 +45,6 @@ function ServicesPage() {
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
             Training for recovery, strength, and performance.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            FIT Beyond Therapy works with adults and athletes at different starting points—from
-            rebuilding after rehabilitation to getting stronger for everyday life or preparing to
-            compete.
-          </p>
         </div>
       </section>
       <Services heading={false} />
