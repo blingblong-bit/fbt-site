@@ -477,7 +477,7 @@ function FitBeyondPerformancePage() {
       </section>
 
       {/* 8. Athlete inquiry form */}
-      <section id="assessment" className="bg-background">
+      <section id="assessment" className="scroll-mt-24 bg-background">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
