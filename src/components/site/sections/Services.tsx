@@ -44,7 +44,6 @@ export function Services({ heading = true }: { heading?: boolean }) {
             <Reveal
               key={s.title}
               as="article"
-              id={s.id}
               delay={i * 80}
               className="group flex scroll-mt-24 flex-col rounded-2xl border border-border bg-card p-7 shadow-card transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-elevated"
             >

@@ -29,7 +29,7 @@ export function ProblemGap() {
             after the clinical phase — not to replace physical therapy or provide medical
             treatment.
           </Reveal>
-          <Reveal delay={140}>
+          <Reveal delay={140} id="personal-training" className="scroll-mt-24">
             <h3 className="text-2xl font-bold text-primary-foreground sm:text-3xl">
               Training built around your life.
             </h3>
