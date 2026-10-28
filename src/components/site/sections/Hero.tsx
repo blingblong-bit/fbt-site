@@ -65,36 +65,37 @@ export function Hero() {
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             The first thing we identify is{" "}
             <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
+              <span className="text-[0.8em] font-bold text-primary/70">“</span>
               THE GAP
+              <span className="text-[0.8em] font-bold text-primary/70">”</span>
             </span>
           </h1>
 
-          {/* "The gap" indicator — where you are → where you want to go */}
-          <div className="mt-7 text-foreground">
-            {/* Mobile: labels in one row above the split line */}
-            <div className="md:hidden">
-              <div className="flex items-baseline justify-between gap-3 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                <span className="whitespace-nowrap">Where are you?</span>
-                <span className="whitespace-nowrap">Where do you want to go?</span>
-              </div>
-              <div aria-hidden="true" className="mt-2.5 flex items-center">
-                <span className="h-px flex-1 bg-primary/40" />
-                <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-                <span className="w-10" />
-                <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-                <span className="h-px flex-1 bg-primary/40" />
-              </div>
+          {/* "The gap" title treatment — arrow dropping into the open gap */}
+          <div className="mt-4 text-foreground">
+            <div aria-hidden="true" className="flex justify-center text-primary">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-7 w-7 sm:h-8 sm:w-8"
+              >
+                <path d="M12 4v14" />
+                <path d="m6 13 6 6 6-6" />
+              </svg>
             </div>
-            {/* Desktop: labels and split line in one row */}
-            <div className="hidden items-center gap-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground md:flex">
+            <div aria-hidden="true" className="mt-1 flex items-center">
+              <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+              <span className="h-px flex-1 bg-primary/40" />
+              <span className="w-16 sm:w-24" />
+              <span className="h-px flex-1 bg-primary/40" />
+              <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+            </div>
+            <div className="mt-2.5 flex items-baseline justify-between gap-3 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground sm:text-xs">
               <span className="whitespace-nowrap">Where are you?</span>
-              <span aria-hidden="true" className="flex flex-1 items-center">
-                <span className="h-px flex-1 bg-primary/40" />
-                <span className="ml-3 h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-                <span className="w-14" />
-                <span className="mr-3 h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-                <span className="h-px flex-1 bg-primary/40" />
-              </span>
               <span className="whitespace-nowrap">Where do you want to go?</span>
             </div>
           </div>
