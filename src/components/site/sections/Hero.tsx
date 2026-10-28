@@ -57,14 +57,14 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8 lg:py-24">
-        <div className="lg:col-span-6">
+        <div className="text-center lg:col-span-6 lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <span className="h-2 w-2 rotate-45 bg-accent" />
             Individualized Training in Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             The first thing we identify is{" "}
-            <span className="block w-fit">
+            <span className="mx-auto block w-fit lg:mx-0">
               <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
                 <span className="text-[0.8em] font-bold text-primary/70">“</span>
                 THE GAP
@@ -104,7 +104,7 @@ export function Hero() {
           </h1>
 
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
