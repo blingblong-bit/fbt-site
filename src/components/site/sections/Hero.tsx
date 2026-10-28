@@ -63,8 +63,46 @@ export function Hero() {
             Individualized Training in Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
-            Build strength for <span className="text-primary">what comes next.</span>
+            The first thing we identify is{" "}
+            <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
+              THE GAP
+            </span>
           </h1>
+
+          {/* "The gap" indicator — where you are → where you want to go */}
+          <div className="mt-7 text-foreground">
+            {/* Mobile: labels in one row above the split line */}
+            <div className="md:hidden">
+              <div className="flex items-baseline justify-between gap-3 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                <span className="whitespace-nowrap">Where are you?</span>
+                <span className="whitespace-nowrap">Where do you want to go?</span>
+              </div>
+              <div aria-hidden="true" className="mt-2.5 flex items-center">
+                <span className="h-px flex-1 bg-primary/40" />
+                <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+                <span className="w-10" />
+                <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+                <span className="h-px flex-1 bg-primary/40" />
+              </div>
+            </div>
+            {/* Desktop: labels and split line in one row */}
+            <div className="hidden items-center gap-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground md:flex">
+              <span className="whitespace-nowrap">Where are you?</span>
+              <span aria-hidden="true" className="flex flex-1 items-center">
+                <span className="h-px flex-1 bg-primary/40" />
+                <span className="ml-3 h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+                <span className="w-14" />
+                <span className="mr-3 h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
+                <span className="h-px flex-1 bg-primary/40" />
+              </span>
+              <span className="whitespace-nowrap">Where do you want to go?</span>
+            </div>
+          </div>
+
+          <p className="mt-8 text-sm font-medium text-muted-foreground">
+            Start where you are. Train for the life, work, or sport you want to return to.
+          </p>
+
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               to="/contact"
@@ -79,9 +117,6 @@ export function Hero() {
               Explore Our Services
             </Link>
           </div>
-          <p className="mt-6 text-sm font-medium text-muted-foreground">
-            Start where you are. Train for the life, work, or sport you want to return to.
-          </p>
         </div>
 
         <div className="relative lg:col-span-6">
