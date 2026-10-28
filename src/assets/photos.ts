@@ -7,7 +7,7 @@
  *
  * Slot assignments (per the site rebuild plan):
  * - hero .................. strongest shot, both faces visible, clear coaching engagement
- * - problemGapBackdrop .... older client w/ ankle strap + resistance band, hands-on coaching
+ * - personalTraining ....... older client resistance-band training (backdrop for the post-rehab section)
  * - finalCtaBackdrop ...... reuses the hero shot under a heavy dark overlay
  * - resultsBackdrop ....... wide action shot (reused; sits under a heavy primary overlay)
  * - athleticPerformance ... most visibly athletic shot of the four
@@ -19,7 +19,6 @@
  * - DoctorReferral inline photo (coach + client reviewing assessment data)
  */
 import coachGuidedTraining from "./coach-guided-training.jpg.asset.json";
-import trainingCoachSenior from "./training-coach-senior.jpg.asset.json";
 import wallballTraining from "./wallball-training.jpg.asset.json";
 import resistanceStep from "./resistance-step.jpg.asset.json";
 import personalTrainingSession from "./personal-training-session.jpg.asset.json";
@@ -37,7 +36,6 @@ export const photos = {
   heroActiveAging: heroActiveAging.url,
   heroIndividualized: heroIndividualized.url,
   hero: coachGuidedTraining.url,
-  problemGapBackdrop: trainingCoachSenior.url,
   finalCtaBackdrop: coachGuidedTraining.url,
   resultsBackdrop: wallballTraining.url,
   athleticPerformance: performanceStepCoaching.url,

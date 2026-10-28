@@ -65,10 +65,6 @@ export function Hero() {
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             Build strength for <span className="text-primary">what comes next.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            FIT Beyond Therapy helps adults and athletes move forward with one-on-one coaching for
-            post-rehab strength, personal training, active aging, and athletic performance.
-          </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               to="/contact"
