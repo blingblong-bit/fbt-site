@@ -92,7 +92,7 @@ export function Hero() {
                 <span className="h-px flex-1 bg-primary/40" />
                 <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
               </span>
-              <span className="mt-3 flex items-baseline justify-between gap-6 text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:gap-8 sm:text-[11px]">
+              <span className="mt-3 hidden items-baseline justify-between gap-6 text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex">
                 <span className="whitespace-nowrap">Where are you?</span>
                 <span className="whitespace-nowrap">Where do you want to go?</span>
               </span>
