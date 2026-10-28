@@ -11,14 +11,14 @@ export function FitBeyondPlus() {
               Connected to FIT Beyond Plus
             </p>
             <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">
-              A complete training environment under one FIT Beyond system.
+              Coaching when you need it. A 24/7 gym when you are ready for more independence.
             </h2>
             <p className="mt-3 text-foreground/75">
-              FIT Beyond Therapy provides individualized coaching, post-rehab progression,
-              performance development, and objective testing. FIT Beyond Plus provides 24-hour gym
-              access, commercial strength equipment, cardio equipment, classes, and an environment
-              where clients can continue building long-term fitness. Together, the two businesses
-              provide a clearer path from coached training to greater independence.
+              FIT Beyond Therapy provides individualized coaching for post-rehab progress, personal
+              training, and athletic performance. FIT Beyond Plus offers 24/7 gym access for people
+              who want to train independently or continue building alongside their FIT coaching. The
+              two businesses make it easier to move from guided training toward long-term
+              independence.
             </p>
           </div>
           <a

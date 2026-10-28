@@ -26,22 +26,26 @@ export function About({
             About FIT Beyond Therapy
           </p>
           <TitleTag className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Built around assessment, progression, and measurable results.
+            Built to close the gap between rehabilitation and real life.
           </TitleTag>
           <div className="mt-8 space-y-5 text-lg text-foreground/80">
             <p>
-              FIT Beyond Therapy was created for people who need more than general exercise but no
-              longer need traditional clinical rehabilitation.
+              Phillip Hill's career has moved through athletic training, sports medicine, strength
+              and conditioning, exercise physiology, clinical rehabilitation, and home health.
+              Across those settings, he saw how often people needed more support after traditional
+              treatment ended.
             </p>
             <p>
-              We work with adults rebuilding strength, individuals seeking structured personal
-              training, and athletes working to improve performance. Our approach combines practical
-              training experience, objective assessment, individualized programming, and consistent
-              progression.
+              The idea for FIT Beyond Therapy became clear when a woman who had completed
+              rehabilitation after a hip replacement still did not feel able to return to the gym.
+              She was no longer in the clinical phase, but she was not yet confident training on her
+              own. Phillip built FIT to serve that space.
             </p>
             <p>
-              We believe every client should understand what they are working on, why it matters,
-              and how their program is moving them forward.
+              Today, FIT Beyond Therapy works with post-rehab clients, adults seeking personal
+              training, active older adults, and athletes. Each person starts from a different
+              place, but the goal is the same: build useful strength, move with greater confidence,
+              and prepare for what matters outside the facility.
             </p>
           </div>
 
@@ -52,20 +56,19 @@ export function About({
                 Founder
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Phillip has spent decades helping people build strength, improve movement, and
-                return to the activities that matter to them. Before creating FIT Beyond Therapy, he
-                worked in clinical and rehabilitation environments, where he saw the gap between
-                finishing treatment and feeling fully prepared for everyday life, exercise, or
-                sport. FIT was built to help close that gap through individualized training,
-                objective assessment, and consistent progression.
+                Phillip brings decades of experience across athletic training, sports medicine,
+                strength and conditioning, exercise physiology, and rehabilitation settings. His
+                Three Pillars of Core system gives the FIT team a consistent framework for
+                individualized strength and movement training without treating every client the
+                same.
               </p>
             </div>
             <div>
               <h3 className="font-display text-lg font-bold">Training Team</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                FIT's trainers work with adults and athletes across a wide range of ages, abilities,
-                and goals. Every trainer follows the same assessment-led approach while adapting the
-                program to the individual.
+                The FIT team includes trainers with backgrounds in kinesiology, athletic training,
+                and personal training. Together, they coach children, adults, athletes, and older
+                clients with programs adapted to the individual.
               </p>
             </div>
           </div>

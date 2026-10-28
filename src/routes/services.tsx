@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { absoluteUrl } from "@/lib/site";
 import { Services } from "@/components/site/sections/Services";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 import { ProblemGap } from "@/components/site/sections/ProblemGap";
@@ -8,20 +7,26 @@ import { PersonalTraining } from "@/components/site/sections/PersonalTraining";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Post-Rehab Strength & Performance Training | FIT Beyond Therapy" },
+      { title: "Post-Rehab & Personal Training | FIT Beyond Therapy | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Post-rehab strength, ForceDecks assessments, injury prevention, functional training, athletic performance, and conditioning in Tullahoma, TN.",
+          "Strength and movement training for life, work, recreation, and sport. Explore post-rehab training, personal training, active aging, and athletic performance in Tullahoma, TN.",
       },
-      { property: "og:title", content: "Services | FIT Beyond Therapy" },
+      {
+        property: "og:title",
+        content: "Post-Rehab & Personal Training | FIT Beyond Therapy | Tullahoma, TN",
+      },
       {
         property: "og:description",
-        content: "Assessment-driven training programs in Tullahoma, TN.",
+        content:
+          "Strength and movement training for life, work, recreation, and sport. Explore post-rehab training, personal training, active aging, and athletic performance in Tullahoma, TN.",
       },
-      { property: "og:url", content: absoluteUrl("/services") },
+      { property: "og:url", content: "https://bridge-to-strength.lovable.app/services" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: absoluteUrl("/services") }],
+    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/services" }],
   }),
   component: ServicesPage,
 });
@@ -35,11 +40,12 @@ function ServicesPage() {
             Services
           </p>
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
-            Programs built on data — not guesswork.
+            Training for recovery, strength, and performance.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Every service starts with an objective assessment and moves through structured
-            progression. From post-rehab strength to athletic performance, this is what we do.
+            FIT Beyond Therapy works with adults and athletes at different starting points—from
+            rebuilding after rehabilitation to getting stronger for everyday life or preparing to
+            compete.
           </p>
         </div>
       </section>

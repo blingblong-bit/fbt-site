@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "What is ForceDecks testing?",
-    a: "ForceDecks uses force plates to measure how you produce and absorb force. Testing may include balance, jump, strength, power, and asymmetry assessments.",
+    a: "ForceDecks uses force plates to measure how you produce and absorb force. Testing may include balance, jump, strength, power, and asymmetry assessments. It is one tool within individualized coaching, used when the information is useful for your goals.",
   },
   {
     q: "Do you offer team training?",

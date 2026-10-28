@@ -5,7 +5,7 @@ const PATHS = [
   {
     icon: "PR",
     title: "Post-Rehab Training",
-    body: "Finished physical therapy but not ready to return to unrestricted training? We help bridge the gap between basic rehabilitation and full strength.",
+    body: "Finished therapy but still not ready for the gym, demanding work, recreation, or everyday activity? We help you rebuild strength and confidence after the clinical phase.",
     cta: "Explore Post-Rehab Training",
     to: "/services" as const,
     hash: "post-rehab",
@@ -20,7 +20,7 @@ const PATHS = [
   {
     icon: "PT",
     title: "Personal Training",
-    body: "Build strength, improve movement, increase confidence, and train with a structured plan designed specifically for you.",
+    body: "One-on-one coaching for adults who want to get stronger, move better, and follow a plan built around their goals, history, and current ability.",
     cta: "Explore Personal Training",
     to: "/services" as const,
     hash: "personal-training",
@@ -33,15 +33,14 @@ export function ChooseYourPath() {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <Reveal className="max-w-3xl">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
-            How Can We Help?
+            Ways to Train
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Start with the service that fits your goals.
+            Find the right place to start.
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-            You do not need to know exactly what type of program you need before contacting us. We
-            will help determine the right starting point based on your goals, experience, and
-            current ability.
+            You do not need to have the answer before you contact us. Tell us where you are now and
+            what you want to get back to, and we will help you choose the right next step.
           </p>
         </Reveal>
 
