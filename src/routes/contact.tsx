@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  absoluteUrl,
   PHONE_DISPLAY,
   PHONE_TEL,
   EMAIL_DISPLAY,
@@ -13,20 +12,23 @@ import { ContactForm } from "@/components/site/ContactForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | FIT Beyond Therapy" },
+      { title: "Contact FIT Beyond Therapy | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Request a consultation for personal training, post-rehab training, athletic performance, or performance testing at FIT Beyond Therapy. Tullahoma, TN.",
+          "Talk with the FIT team in Tullahoma, TN about post-rehab training, personal training, active aging, or athletic performance. Share your goals and starting point.",
       },
-      { property: "og:title", content: "Contact | FIT Beyond Therapy" },
+      { property: "og:title", content: "Contact FIT Beyond Therapy | Tullahoma, TN" },
       {
         property: "og:description",
-        content: "Tell us how we can help. Request a consultation in Tullahoma, TN.",
+        content:
+          "Talk with the FIT team in Tullahoma, TN about post-rehab training, personal training, active aging, or athletic performance. Share your goals and starting point.",
       },
-      { property: "og:url", content: absoluteUrl("/contact") },
+      { property: "og:url", content: "https://bridge-to-strength.lovable.app/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
+    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/contact" }],
   }),
   component: ContactPage,
 });
@@ -40,11 +42,11 @@ function ContactPage() {
             Get in touch
           </p>
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
-            Tell us how we can help.
+            Tell us what you want to get back to.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Complete the form below and a member of the FIT Beyond team will contact you to discuss
-            your goals and the best next step.
+            Share your goals and where you are starting. A member of the FIT team will contact you
+            to talk through the best next step.
           </p>
         </div>
 

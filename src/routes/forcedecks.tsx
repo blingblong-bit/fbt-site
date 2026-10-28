@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { absoluteUrl } from "@/lib/site";
 import { ForceDecks } from "@/components/site/sections/ForceDecks";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 import { FAQ } from "@/components/site/sections/FAQ";
@@ -7,20 +6,23 @@ import { FAQ } from "@/components/site/sections/FAQ";
 export const Route = createFileRoute("/forcedecks")({
   head: () => ({
     meta: [
-      { title: "ForceDecks Assessment — Objective Force Plate Testing | FIT Beyond Therapy" },
+      { title: "ForceDecks Testing | FIT Beyond Therapy | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "ForceDecks force plate assessment in Tullahoma, TN. Objective measurement of force production, asymmetries, and movement quality — the tech used by pro programs.",
+          "ForceDecks force plate testing in Tullahoma, TN provides objective information about force, balance, and power when it can inform individualized training.",
       },
-      { property: "og:title", content: "ForceDecks Assessment | FIT Beyond Therapy" },
+      { property: "og:title", content: "ForceDecks Testing | FIT Beyond Therapy | Tullahoma, TN" },
       {
         property: "og:description",
-        content: "We don't guess. We measure. Force plate assessments in Tullahoma, TN.",
+        content:
+          "ForceDecks force plate testing in Tullahoma, TN provides objective information about force, balance, and power when it can inform individualized training.",
       },
-      { property: "og:url", content: absoluteUrl("/forcedecks") },
+      { property: "og:url", content: "https://bridge-to-strength.lovable.app/forcedecks" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: absoluteUrl("/forcedecks") }],
+    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/forcedecks" }],
   }),
   component: ForceDecksPage,
 });

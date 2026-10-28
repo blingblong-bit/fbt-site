@@ -6,7 +6,6 @@ import { photos } from "@/assets/photos";
 const FOCUS_AREAS = [
   "Building strength",
   "Improving mobility",
-  "Losing body fat",
   "Increasing energy and conditioning",
   "Returning to consistent exercise",
   "Training safely around previous injuries",
@@ -22,11 +21,11 @@ export function PersonalTraining() {
             Personal Training
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            A clear plan, professional coaching, and measurable progress.
+            Training built around your life.
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-            Personal training at FIT Beyond is designed for adults who want more structure than an
-            ordinary gym membership provides.
+            Personal training at FIT is for adults who want professional guidance, a clear plan, and
+            coaching that accounts for their goals, history, and current ability.
           </p>
         </Reveal>
 
@@ -56,8 +55,8 @@ export function PersonalTraining() {
             </Reveal>
             <Reveal delay={200}>
               <p className="text-lg text-foreground/80">
-                Every program begins with a conversation about your goals, current ability, training
-                history, and any limitations that need to be considered.
+                Your first conversation helps us understand what you want to improve, what has held
+                you back, and what your training needs to prepare you for.
               </p>
               <Link
                 to="/contact"

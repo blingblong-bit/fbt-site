@@ -5,7 +5,7 @@ const SERVICES = [
     id: "post-rehab",
     icon: "PR",
     title: "Post-Rehab Training",
-    body: "Structured progression for clients discharged from PT who need to rebuild real strength and confidence in movement — not just tolerate it.",
+    body: "Individualized strength and movement training for people who have completed rehabilitation but do not yet feel ready to return to normal exercise, work, recreation, or sport.",
   },
   {
     id: "fit-beyond-performance",
@@ -17,7 +17,7 @@ const SERVICES = [
     id: "personal-training",
     icon: "PT",
     title: "Personal Training",
-    body: "Individualized strength, mobility, and conditioning for adults with specific goals — real-world movement patterns, not isolated machine work, with accountability built in.",
+    body: "One-on-one coaching for strength, mobility, conditioning, active aging, and the physical demands of everyday life.",
   },
 ];
 
@@ -31,11 +31,10 @@ export function Services({ heading = true }: { heading?: boolean }) {
               What We Do
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-              Assessment-driven training, from post-rehab to peak performance.
+              Training for recovery, strength, and performance.
             </h2>
             <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-              Every service starts with an objective look at where you are — then builds a plan to
-              get you where you're going.
+              We build your training around your goals, history, and current ability.
             </p>
           </Reveal>
         )}

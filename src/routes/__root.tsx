@@ -81,30 +81,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        title:
-          "FIT Beyond Therapy — Personal Training, Post-Rehab & FIT Beyond Performance | Tullahoma, TN",
-      },
-      {
-        name: "description",
-        content:
-          "Personalized strength training, post-rehab progression, and athletic performance development in Tullahoma, TN — backed by objective ForceDecks testing.",
-      },
       { name: "author", content: "FIT Beyond Therapy" },
       { property: "og:site_name", content: "FIT Beyond Therapy" },
       { property: "og:type", content: "website" },
-      {
-        property: "og:title",
-        content: "FIT Beyond Therapy — Personal Training, Post-Rehab & FIT Beyond Performance",
-      },
-      {
-        property: "og:description",
-        content:
-          "Training built around where you are — and where you want to go. Personal training, post-rehab progression, and athletic performance in Tullahoma, TN.",
-      },
-      { property: "og:image", content: "https://fitbeyondtherapy.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://fitbeyondtherapy.com/og-image.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -127,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "FIT Beyond Therapy",
           url: "https://fitbeyondtherapy.com",
           description:
-            "Personalized strength training, post-rehab progression, and athletic performance development in Tullahoma, TN.",
+            "Individualized post-rehab training, personal training, active-aging support, and athletic performance coaching in Tullahoma, Tennessee.",
           telephone: PHONE_TEL.replace("tel:", ""),
           address: {
             "@type": "PostalAddress",

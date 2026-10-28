@@ -4,18 +4,18 @@ import { Reveal } from "../Reveal";
 const STEPS = [
   {
     n: "01",
-    title: "Assess where you are",
-    body: "We start with a conversation about your goals and history, plus objective testing — including ForceDecks force plates when it's useful.",
+    title: "Talk through your goals",
+    body: "We start with your history, current ability, and the activities you want to return to or improve.",
   },
   {
     n: "02",
-    title: "Build an individualized plan",
-    body: "Your program is built around your goals, training history, and current ability — not a template.",
+    title: "Train with an individualized plan",
+    body: "Your coaching is built around you and guided by the same systematic approach Phillip developed through years of training and rehabilitation experience.",
   },
   {
     n: "03",
-    title: "Measure progress",
-    body: "We retest and track along the way so the changes are visible, not guessed.",
+    title: "Progress with purpose",
+    body: "We adjust the plan as you improve and use objective testing, including ForceDecks, when it adds useful information.",
   },
 ];
 
@@ -28,7 +28,7 @@ export function HowItWorks() {
             How FIT Works
           </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Assess. Plan. Measure.
+            Start where you are. Build from there.
           </h2>
         </Reveal>
         <ol className="mt-12 grid gap-8 md:grid-cols-3">

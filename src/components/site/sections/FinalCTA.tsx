@@ -23,10 +23,11 @@ export function FinalCTA() {
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-28">
         <Reveal>
           <h2 className="text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
-            Ready to start training with a plan?
+            Ready to take the next step?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-primary-foreground/80">
-            Tell us what you are working toward. We will help you determine the best place to begin.
+            Tell us what you want to feel ready for. We will help you choose the best place to
+            begin.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Link

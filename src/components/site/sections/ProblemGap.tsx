@@ -18,21 +18,21 @@ export function ProblemGap() {
             Post-Rehab Training
           </p>
           <h2 className="mt-3 text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
-            Physical therapy helps restore function. We help you continue building strength,
-            confidence, and capacity afterward.
+            Finishing therapy is not always the end of the process.
           </h2>
         </Reveal>
         <div className="mt-10 grid gap-8 text-lg leading-relaxed text-primary-foreground/80 md:grid-cols-2">
           <Reveal as="p" delay={80}>
-            Being discharged from physical therapy does not always mean you are ready to return to
-            unrestricted exercise, demanding work, recreation, or sports. FIT Beyond Therapy
-            provides structured strength and movement training for people who have completed
-            rehabilitation but still need help rebuilding confidence, capacity, and physical
-            resilience.
+            Phillip saw the same problem repeatedly in clinical and rehabilitation settings: people
+            could be discharged from therapy and still feel unprepared for the gym, work,
+            recreation, or daily life. A woman struggling to return to exercise after a hip
+            replacement made the gap especially clear.
           </Reveal>
           <Reveal as="p" delay={160}>
-            Our goal is not to replace physical therapy. We begin after the clinical phase and help
-            you progress toward stronger, more capable movement.
+            FIT Beyond Therapy was created to help close that gap with individualized strength and
+            movement training after the clinical phase. We do not replace physical therapy or
+            provide medical treatment; we help people keep building once they are ready for
+            training.
           </Reveal>
         </div>
         <Reveal delay={220} className="mt-10">

@@ -6,6 +6,7 @@ import {
   EMAIL_HREF,
   ADDRESS_LINE1,
   ADDRESS_LINE2,
+  FBP_URL,
 } from "@/lib/site";
 import fbtLogo from "@/assets/fbt-logo.png.asset.json";
 
@@ -23,8 +24,8 @@ export function SiteFooter() {
               />
             </div>
             <p className="mt-4 max-w-md text-sm text-primary-foreground/70">
-              Personal training, post-rehab progression, and athletic performance development in
-              Tullahoma, TN — backed by objective ForceDecks testing.
+              Individualized post-rehab training, personal training, active-aging support, and
+              athletic performance coaching in Tullahoma, Tennessee.
             </p>
             <p className="mt-6 text-sm text-primary-foreground/70">
               {ADDRESS_LINE1}, {ADDRESS_LINE2}
@@ -78,7 +79,7 @@ export function SiteFooter() {
             </ul>
             <p className="mt-6 text-sm text-primary-foreground/70">
               Connected to{" "}
-              <a href="#" className="font-semibold text-accent hover:underline">
+              <a href={FBP_URL} className="font-semibold text-accent hover:underline">
                 FIT Beyond Plus
               </a>{" "}
               gym.

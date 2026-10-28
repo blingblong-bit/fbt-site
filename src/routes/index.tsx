@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { absoluteUrl } from "@/lib/site";
 import { Hero } from "@/components/site/sections/Hero";
 import { ChooseYourPath } from "@/components/site/sections/ChooseYourPath";
 import { HowItWorks } from "@/components/site/sections/HowItWorks";
@@ -8,8 +7,27 @@ import { FinalCTA } from "@/components/site/sections/FinalCTA";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    links: [{ rel: "canonical", href: absoluteUrl("/") }],
-    meta: [{ property: "og:url", content: absoluteUrl("/") }],
+    meta: [
+      { title: "FIT Beyond Therapy | Individualized Training in Tullahoma, TN" },
+      {
+        name: "description",
+        content:
+          "Individualized post-rehab training, personal training, active aging, and athletic performance coaching for adults and athletes in Tullahoma, TN.",
+      },
+      {
+        property: "og:title",
+        content: "FIT Beyond Therapy | Individualized Training in Tullahoma, TN",
+      },
+      {
+        property: "og:description",
+        content:
+          "Individualized post-rehab training, personal training, active aging, and athletic performance coaching for adults and athletes in Tullahoma, TN.",
+      },
+      { property: "og:url", content: "https://bridge-to-strength.lovable.app/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/" }],
   }),
   component: Home,
 });

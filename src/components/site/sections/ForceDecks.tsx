@@ -39,9 +39,9 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
             <img src={fdLogo} alt="ForceDecks — Dual Force Plate System" className="h-7 w-auto" />
           </div>
           <p className="mt-6 text-lg text-foreground/80">
-            ForceDecks technology allows us to objectively evaluate how you produce and absorb
-            force — whether we're working with an athlete, a post-rehab client, or an adult building
-            strength and confidence.
+            ForceDecks gives our coaches objective information about how a person produces and
+            absorbs force. We use it when the data can help establish a starting point, guide a
+            training decision, or show change over time.
           </p>
 
           <div className="mt-8">
@@ -59,8 +59,8 @@ export function ForceDecks({ titleTag: TitleTag = "h2" }: { titleTag?: "h1" | "h
           </div>
 
           <p className="mt-6 text-foreground/80">
-            The data gives our coaches a clearer starting point, helps guide training decisions,
-            and gives us another way to measure meaningful change over time.
+            Testing is one tool within individualized coaching. We consider the data alongside your
+            goals, history, and training—not as a diagnosis or a prediction of injury.
           </p>
 
           <div className="mt-8">

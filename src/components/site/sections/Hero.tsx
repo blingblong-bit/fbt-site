@@ -60,16 +60,14 @@ export function Hero() {
         <div className="lg:col-span-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <span className="h-2 w-2 rotate-45 bg-accent" />
-            Assessment-Driven Training in Tullahoma, TN
+            Individualized Training in Tullahoma, TN
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
-            Training built around where you are —{" "}
-            <span className="text-primary">and where you want to go.</span>
+            Build strength for <span className="text-primary">what comes next.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            FIT Beyond Therapy provides one-on-one personal training, post-rehab strength
-            development, athletic performance coaching, and objective testing for adults and
-            athletes at every starting point.
+            FIT Beyond Therapy helps adults and athletes move forward with one-on-one coaching for
+            post-rehab strength, personal training, active aging, and athletic performance.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
@@ -86,7 +84,7 @@ export function Hero() {
             </Link>
           </div>
           <p className="mt-6 text-sm font-medium text-muted-foreground">
-            For everyday strength, post-rehab progress, active aging, and athletic performance.
+            Start where you are. Train for the life, work, or sport you want to return to.
           </p>
         </div>
 

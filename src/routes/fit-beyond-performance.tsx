@@ -9,7 +9,6 @@ import {
   YAxis,
   Cell,
 } from "recharts";
-import { absoluteUrl } from "@/lib/site";
 import { PlaceholderImage } from "@/components/site/PlaceholderImage";
 import { Reveal } from "@/components/site/Reveal";
 import { AthleteInquiryForm } from "@/components/site/AthleteInquiryForm";
@@ -21,22 +20,31 @@ import { photos } from "@/assets/photos";
 export const Route = createFileRoute("/fit-beyond-performance")({
   head: () => ({
     meta: [
-      { title: "FIT Beyond Performance — Athletic Training & Testing | Tullahoma, TN" },
+      { title: "FIT Beyond Performance | Athletic Performance Training | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Individual, small-group, and team athletic performance training with ForceDecks testing for middle-school, high-school, and competitive athletes in Tullahoma, TN.",
+          "Individual, small-group, and team athletic performance training for middle-school, high-school, college, and professional athletes in Tullahoma, TN.",
       },
-      { property: "og:title", content: "FIT Beyond Performance | FIT Beyond Therapy" },
+      {
+        property: "og:title",
+        content: "FIT Beyond Performance | Athletic Performance Training | Tullahoma, TN",
+      },
       {
         property: "og:description",
-        content: "Stronger. Faster. Better prepared to compete. Tullahoma, TN.",
+        content:
+          "Individual, small-group, and team athletic performance training for middle-school, high-school, college, and professional athletes in Tullahoma, TN.",
       },
-      { property: "og:url", content: absoluteUrl("/fit-beyond-performance") },
+      {
+        property: "og:url",
+        content: "https://bridge-to-strength.lovable.app/fit-beyond-performance",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: absoluteUrl("/fit-beyond-performance") }],
+    links: [
+      { rel: "canonical", href: "https://bridge-to-strength.lovable.app/fit-beyond-performance" },
+    ],
   }),
   component: FitBeyondPerformancePage,
 });
@@ -312,10 +320,9 @@ function FitBeyondPerformancePage() {
               <img src={fdLogo} alt="ForceDecks — Dual Force Plate System" className="h-7 w-auto" />
             </div>
             <p className="mt-6 text-lg text-foreground/80">
-              Testing gives us a starting point, helps guide training, and allows us to measure
-              progress over time. Every FIT Beyond Performance athlete has access to ForceDecks
-              testing as part of how we build and adjust the training plan — not as a separate
-              add-on service.
+              ForceDecks testing can help establish a starting point, guide training decisions, and
+              show change over time. We use it when the information is useful for the athlete’s
+              goals, alongside coaching and the training plan.
             </p>
             <ul className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
               {TESTING_INCLUDES.map((item) => (
@@ -428,7 +435,6 @@ function FitBeyondPerformancePage() {
           </Reveal>
         </div>
       </section>
-
 
       {/* 7. Parent FAQ */}
       <section className="bg-surface">
