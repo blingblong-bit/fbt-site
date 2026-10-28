@@ -43,7 +43,7 @@ export function Hero() {
       <div
         aria-hidden
         style={slow}
-        className="pointer-events-none absolute -right-24 top-24 h-72 w-72 rotate-45 rounded-3xl border border-primary/15 bg-primary/[0.03] will-change-transform"
+        className="pointer-events-none absolute -right-24 top-24 hidden h-72 w-72 rotate-45 rounded-3xl border border-primary/15 bg-primary/[0.03] will-change-transform lg:block"
       />
       <div
         aria-hidden
