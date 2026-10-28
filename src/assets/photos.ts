@@ -19,7 +19,6 @@
  * - DoctorReferral inline photo (coach + client reviewing assessment data)
  */
 import coachGuidedTraining from "./coach-guided-training.jpg.asset.json";
-import trainingCoachSenior from "./training-coach-senior.jpg.asset.json";
 import wallballTraining from "./wallball-training.jpg.asset.json";
 import resistanceStep from "./resistance-step.jpg.asset.json";
 import personalTrainingSession from "./personal-training-session.jpg.asset.json";
@@ -37,7 +36,6 @@ export const photos = {
   heroActiveAging: heroActiveAging.url,
   heroIndividualized: heroIndividualized.url,
   hero: coachGuidedTraining.url,
-  problemGapBackdrop: trainingCoachSenior.url,
   finalCtaBackdrop: coachGuidedTraining.url,
   resultsBackdrop: wallballTraining.url,
   athleticPerformance: performanceStepCoaching.url,
