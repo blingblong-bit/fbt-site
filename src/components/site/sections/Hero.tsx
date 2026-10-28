@@ -64,45 +64,45 @@ export function Hero() {
           </span>
           <h1 className="mt-5 text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             The first thing we identify is{" "}
-            <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
-              <span className="text-[0.8em] font-bold text-primary/70">“</span>
-              THE GAP
-              <span className="text-[0.8em] font-bold text-primary/70">”</span>
+            <span className="block w-fit">
+              <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
+                <span className="text-[0.8em] font-bold text-primary/70">“</span>
+                THE GAP
+                <span className="text-[0.8em] font-bold text-primary/70">”</span>
+              </span>
+
+              {/* The gap indicator — sized to the headline so the arrow drops into its center */}
+              <span
+                aria-hidden="true"
+                className="mt-3 flex justify-center text-primary"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-7 w-7 sm:h-8 sm:w-8"
+                >
+                  <path d="M12 4v14" />
+                  <path d="m6 13 6 6 6-6" />
+                </svg>
+              </span>
+              <span aria-hidden="true" className="mt-1 flex items-center gap-2">
+                <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
+                <span className="h-px flex-1 bg-primary/40" />
+                <span className="w-8 shrink-0" />
+                <span className="h-px flex-1 bg-primary/40" />
+                <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
+              </span>
+              <span className="mt-2.5 flex flex-col items-center gap-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex-row lg:items-baseline lg:justify-between lg:gap-6">
+                <span className="whitespace-nowrap">Where are you?</span>
+                <span className="whitespace-nowrap">Where do you want to go?</span>
+              </span>
             </span>
           </h1>
 
-          {/* "The gap" title treatment — arrow dropping into the open gap */}
-          <div className="mt-4 text-foreground">
-            <div aria-hidden="true" className="flex justify-center text-primary">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-7 w-7 sm:h-8 sm:w-8"
-              >
-                <path d="M12 4v14" />
-                <path d="m6 13 6 6 6-6" />
-              </svg>
-            </div>
-            <div aria-hidden="true" className="mt-1 flex items-center">
-              <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-              <span className="h-px flex-1 bg-primary/40" />
-              <span className="w-16 sm:w-24" />
-              <span className="h-px flex-1 bg-primary/40" />
-              <span className="h-1.5 w-1.5 rotate-45 rounded-[1px] bg-accent" />
-            </div>
-            <div className="mt-2.5 flex items-baseline justify-between gap-3 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground sm:text-xs">
-              <span className="whitespace-nowrap">Where are you?</span>
-              <span className="whitespace-nowrap">Where do you want to go?</span>
-            </div>
-          </div>
-
-          <p className="mt-8 text-sm font-medium text-muted-foreground">
-            Start where you are. Train for the life, work, or sport you want to return to.
-          </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
