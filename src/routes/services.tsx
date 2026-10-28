@@ -26,6 +26,8 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: absoluteUrl("/services") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: absoluteUrl("/og-image.png") },
+      { name: "twitter:image", content: absoluteUrl("/og-image.png") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/services") }],
   }),
