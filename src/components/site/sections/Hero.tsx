@@ -101,9 +101,9 @@ export function Hero() {
               aria-hidden="true"
               className="mx-auto mt-3 grid w-full grid-cols-[minmax(0,1fr)_24px_minmax(0,1fr)] items-baseline text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:grid-cols-[minmax(0,1fr)_32px_minmax(0,1fr)] sm:text-[11px] lg:hidden"
             >
-              <span className="whitespace-nowrap text-center">Where are you?</span>
+              <span className="text-center text-balance">Where are you?</span>
               <span />
-              <span className="whitespace-nowrap text-center">Where do you want to go?</span>
+              <span className="text-center text-balance">Where do you want to go?</span>
             </span>
           </h1>
 
