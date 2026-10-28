@@ -8,3 +8,4 @@
 - [x] Use group-demonstration alt text for the coach demonstration photo.
 - [x] Verify the page on desktop and mobile.
 - [x] Straighten the hero title treatment so the arrow, line, and labels align with the headline; remove the "Start where you are..." line.
+- [x] Center the hero title treatment, badge, and buttons on phone widths; keep desktop left-aligned.
