@@ -88,14 +88,22 @@ export function Hero() {
               <span aria-hidden="true" className="mt-1 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
                 <span className="h-px flex-1 bg-primary/40" />
-                <span className="w-8 shrink-0" />
+                <span className="w-6 shrink-0 sm:w-8" />
                 <span className="h-px flex-1 bg-primary/40" />
                 <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
               </span>
-              <span className="mt-3 flex flex-col items-center gap-1.5 text-center text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex-row lg:items-baseline lg:justify-between lg:gap-6">
+              <span className="mt-3 hidden items-baseline justify-between gap-6 text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex">
                 <span className="whitespace-nowrap">Where are you?</span>
                 <span className="whitespace-nowrap">Where do you want to go?</span>
               </span>
+            </span>
+            <span
+              aria-hidden="true"
+              className="mx-auto mt-3 grid w-full grid-cols-[minmax(0,1fr)_24px_minmax(0,1fr)] items-baseline text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:grid-cols-[minmax(0,1fr)_32px_minmax(0,1fr)] sm:text-[11px] lg:hidden"
+            >
+              <span className="text-center text-balance">Where are you?</span>
+              <span />
+              <span className="text-center text-balance">Where do you want to go?</span>
             </span>
           </h1>
 

@@ -10,3 +10,4 @@
 - [x] Straighten the hero title treatment so the arrow, line, and labels align with the headline; remove the "Start where you are..." line.
 - [x] Center the hero title treatment, badge, and buttons on phone widths; keep desktop left-aligned.
 - [x] Remove the "Individualized Training in Tullahoma, TN" pill from the hero; keep headline aligned with the photo grid.
+- [x] Put the two hero questions on opposite sides of the gap at phone widths; keep desktop as before.
