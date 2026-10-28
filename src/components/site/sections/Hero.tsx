@@ -117,9 +117,6 @@ export function Hero() {
               Explore Our Services
             </Link>
           </div>
-          <p className="mt-6 text-sm font-medium text-muted-foreground">
-            Start where you are. Train for the life, work, or sport you want to return to.
-          </p>
         </div>
 
         <div className="relative lg:col-span-6">
