@@ -96,7 +96,7 @@ export function Hero() {
                 <span className="h-px flex-1 bg-primary/40" />
                 <span className="h-1.5 w-1.5 shrink-0 rotate-45 rounded-[1px] bg-accent" />
               </span>
-              <span className="mt-2.5 flex flex-col items-center gap-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex-row lg:items-baseline lg:justify-between lg:gap-6">
+              <span className="mt-3 flex flex-col items-center gap-1.5 text-center text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex-row lg:items-baseline lg:justify-between lg:gap-6">
                 <span className="whitespace-nowrap">Where are you?</span>
                 <span className="whitespace-nowrap">Where do you want to go?</span>
               </span>
