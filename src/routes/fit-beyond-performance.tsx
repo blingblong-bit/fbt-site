@@ -191,6 +191,15 @@ function FitBeyondPerformancePage() {
             <h1 className="mt-3 text-4xl font-bold sm:text-5xl lg:text-6xl">
               Stronger. Faster. Better prepared to compete.
             </h1>
+            <div className="mt-8">
+              <Link
+                to="/fit-beyond-performance"
+                hash="assessment"
+                className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
+              >
+                Talk to a Performance Coach
+              </Link>
+            </div>
           </div>
           <PlaceholderImage
             label="Athlete training on the FIT Beyond Therapy floor"
@@ -468,7 +477,7 @@ function FitBeyondPerformancePage() {
       </section>
 
       {/* 8. Athlete inquiry form */}
-      <section id="assessment" className="bg-background">
+      <section id="assessment" className="scroll-mt-24 bg-background">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
