@@ -7,3 +7,4 @@
 - [x] Preserve the dark facility overlay and set mobile focal positions for hero and facility photos.
 - [x] Use group-demonstration alt text for the coach demonstration photo.
 - [x] Verify the page on desktop and mobile.
+- [x] Straighten the hero title treatment so the arrow, line, and labels align with the headline; remove the "Start where you are..." line.
