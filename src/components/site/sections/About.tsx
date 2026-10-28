@@ -15,7 +15,7 @@ export function About({
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-28">
         <Reveal className="lg:col-span-5">
           <PlaceholderImage
-            label="Phillip Hill, Founder, standing on the FIT training floor"
+            label="Philip Hill, Founder, standing on the FIT training floor"
             src={phillipHillPortrait.url}
             aspect="aspect-[4/5]"
             className="shadow-elevated"
@@ -30,7 +30,7 @@ export function About({
           </TitleTag>
           <div className="mt-8 space-y-5 text-lg text-foreground/80">
             <p>
-              Phillip Hill's career has moved through athletic training, sports medicine, strength
+              Philip Hill's career has moved through athletic training, sports medicine, strength
               and conditioning, exercise physiology, clinical rehabilitation, and home health.
               Across those settings, he saw how often people needed more support after traditional
               treatment ended.
@@ -39,7 +39,7 @@ export function About({
               The idea for FIT Beyond Therapy became clear when a woman who had completed
               rehabilitation after a hip replacement still did not feel able to return to the gym.
               She was no longer in the clinical phase, but she was not yet confident training on her
-              own. Phillip built FIT to serve that space.
+              own. Philip built FIT to serve that space.
             </p>
             <p>
               Today, FIT Beyond Therapy works with post-rehab clients, adults seeking personal
@@ -51,12 +51,12 @@ export function About({
 
           <div className="mt-10 grid gap-6 border-t border-border pt-8 sm:grid-cols-2">
             <div>
-              <h3 className="font-display text-lg font-bold">Phillip Hill</h3>
+              <h3 className="font-display text-lg font-bold">Philip Hill</h3>
               <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-accent">
                 Founder
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Phillip brings decades of experience across athletic training, sports medicine,
+                Philip brings decades of experience across athletic training, sports medicine,
                 strength and conditioning, exercise physiology, and rehabilitation settings. His
                 Three Pillars of Core system gives the FIT team a consistent framework for
                 individualized strength and movement training without treating every client the

@@ -10,7 +10,7 @@ const STEPS = [
   {
     n: "02",
     title: "Train with an individualized plan",
-    body: "Your coaching is built around you and guided by the same systematic approach Phillip developed through years of training and rehabilitation experience.",
+    body: "Your coaching is built around you and guided by the same systematic approach Philip developed through years of training and rehabilitation experience.",
   },
   {
     n: "03",
