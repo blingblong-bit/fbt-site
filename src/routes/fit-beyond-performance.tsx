@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import {
   Bar,
   BarChart,
@@ -37,14 +38,14 @@ export const Route = createFileRoute("/fit-beyond-performance")({
       },
       {
         property: "og:url",
-        content: "https://bridge-to-strength.lovable.app/fit-beyond-performance",
+        content: absoluteUrl("/fit-beyond-performance"),
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: absoluteUrl("/og-image.png") },
+      { name: "twitter:image", content: absoluteUrl("/og-image.png") },
     ],
-    links: [
-      { rel: "canonical", href: "https://bridge-to-strength.lovable.app/fit-beyond-performance" },
-    ],
+    links: [{ rel: "canonical", href: absoluteUrl("/fit-beyond-performance") }],
   }),
   component: FitBeyondPerformancePage,
 });

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { Hero } from "@/components/site/sections/Hero";
 import { ChooseYourPath } from "@/components/site/sections/ChooseYourPath";
 import { HowItWorks } from "@/components/site/sections/HowItWorks";
@@ -23,11 +24,13 @@ export const Route = createFileRoute("/")({
         content:
           "Individualized post-rehab training, personal training, active aging, and athletic performance coaching for adults and athletes in Tullahoma, TN.",
       },
-      { property: "og:url", content: "https://bridge-to-strength.lovable.app/" },
+      { property: "og:url", content: absoluteUrl("/") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: absoluteUrl("/og-image.png") },
+      { name: "twitter:image", content: absoluteUrl("/og-image.png") },
     ],
-    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/") }],
   }),
   component: Home,
 });

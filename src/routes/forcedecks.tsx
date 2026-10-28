@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { absoluteUrl } from "@/lib/site";
 import { ForceDecks } from "@/components/site/sections/ForceDecks";
 import { FinalCTA } from "@/components/site/sections/FinalCTA";
 import { FAQ } from "@/components/site/sections/FAQ";
@@ -18,11 +19,13 @@ export const Route = createFileRoute("/forcedecks")({
         content:
           "ForceDecks force plate testing in Tullahoma, TN provides objective information about force, balance, and power when it can inform individualized training.",
       },
-      { property: "og:url", content: "https://bridge-to-strength.lovable.app/forcedecks" },
+      { property: "og:url", content: absoluteUrl("/forcedecks") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: absoluteUrl("/og-image.png") },
+      { name: "twitter:image", content: absoluteUrl("/og-image.png") },
     ],
-    links: [{ rel: "canonical", href: "https://bridge-to-strength.lovable.app/forcedecks" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/forcedecks") }],
   }),
   component: ForceDecksPage,
 });
