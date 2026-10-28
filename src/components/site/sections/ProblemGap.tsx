@@ -29,15 +29,6 @@ export function ProblemGap() {
             after the clinical phase — not to replace physical therapy or provide medical
             treatment.
           </Reveal>
-          <Reveal delay={140} id="personal-training" className="scroll-mt-24">
-            <h3 className="text-2xl font-bold text-primary-foreground sm:text-3xl">
-              Training built around your life.
-            </h3>
-            <p className="mt-3">
-              Personal training at FIT is for adults who want professional guidance, a clear plan,
-              and coaching that accounts for their goals, history, and current ability.
-            </p>
-          </Reveal>
         </div>
         <Reveal delay={220} className="mt-10">
           <Link

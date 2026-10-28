@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { absoluteUrl } from "@/lib/site";
 import { Services } from "@/components/site/sections/Services";
 import { ProblemGap } from "@/components/site/sections/ProblemGap";
+import { PersonalTraining } from "@/components/site/sections/PersonalTraining";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -47,6 +48,7 @@ function ServicesPage() {
       </section>
       <Services heading={false} />
       <ProblemGap />
+      <PersonalTraining />
     </>
   );
 }
