@@ -7,20 +7,20 @@ import { FinalCTA } from "@/components/site/sections/FinalCTA";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Phillip Hill & the FIT Story | FIT Beyond Therapy | Tullahoma, TN" },
+      { title: "Philip Hill & the FIT Story | FIT Beyond Therapy | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Learn why Phillip Hill built FIT Beyond Therapy to bridge the gap between rehabilitation and real life, with individualized training in Tullahoma, TN.",
+          "Learn why Philip Hill built FIT Beyond Therapy to bridge the gap between rehabilitation and real life, with individualized training in Tullahoma, TN.",
       },
       {
         property: "og:title",
-        content: "Phillip Hill & the FIT Story | FIT Beyond Therapy | Tullahoma, TN",
+        content: "Philip Hill & the FIT Story | FIT Beyond Therapy | Tullahoma, TN",
       },
       {
         property: "og:description",
         content:
-          "Learn why Phillip Hill built FIT Beyond Therapy to bridge the gap between rehabilitation and real life, with individualized training in Tullahoma, TN.",
+          "Learn why Philip Hill built FIT Beyond Therapy to bridge the gap between rehabilitation and real life, with individualized training in Tullahoma, TN.",
       },
       { property: "og:url", content: absoluteUrl("/about") },
       { property: "og:type", content: "website" },

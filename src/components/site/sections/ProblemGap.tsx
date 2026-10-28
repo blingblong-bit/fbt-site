@@ -23,7 +23,7 @@ export function ProblemGap() {
         </Reveal>
         <div className="mt-10 grid gap-8 text-lg leading-relaxed text-primary-foreground/80 md:grid-cols-2">
           <Reveal as="p" delay={80}>
-            Phillip saw the same problem repeatedly in clinical and rehabilitation settings: people
+            Philip saw the same problem repeatedly in clinical and rehabilitation settings: people
             could be discharged from therapy and still feel unprepared for the gym, work,
             recreation, or daily life. A woman struggling to return to exercise after a hip
             replacement made the gap especially clear.
