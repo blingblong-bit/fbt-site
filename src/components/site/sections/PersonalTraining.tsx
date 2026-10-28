@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "../Reveal";
 import { photos } from "@/assets/photos";
+import { FBP_URL } from "@/lib/site";
 
 const BENEFITS = [
   "Build useful, everyday strength",
@@ -51,6 +52,36 @@ export function PersonalTraining() {
               and what your training needs to prepare you for. From there, we build and adjust the
               plan around your progress.
             </p>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-border bg-surface-strong/60 p-6 shadow-card">
+            <div className="flex items-start gap-3">
+              <span
+                aria-hidden="true"
+                className="mt-1.5 h-2.5 w-2.5 shrink-0 rotate-45 rounded-[2px] bg-accent"
+              />
+              <div>
+                <p className="font-mono text-[11px] font-semibold uppercase tracking-widest text-accent">
+                  Train Beyond Your Sessions
+                </p>
+                <h3 className="mt-2 font-display text-lg font-bold sm:text-xl">
+                  Coaching when you need it. A 24/7 gym when you want more independence.
+                </h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-foreground/75">
+                  FIT Beyond Plus is the connected 24/7 gym for people who want a place to continue
+                  training outside coached sessions or build toward exercising more independently.
+                  Gym membership is separate from personal training at FIT Beyond Therapy.
+                </p>
+                <a
+                  href={FBP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                >
+                  Explore FIT Beyond Plus <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <Link
