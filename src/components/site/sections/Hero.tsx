@@ -67,7 +67,7 @@ export function Hero() {
           <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             <span className="block">MOVE BETTER.</span>
             <span className="block">BUILD LASTING STRENGTH.</span>
-            <span className="block text-primary">PERFORM AT THEIR BEST.</span>
+            <span className="block text-primary">PERFORM AT YOUR BEST.</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
