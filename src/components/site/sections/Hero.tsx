@@ -102,23 +102,27 @@ export function Hero() {
           />
           <div className="relative z-10 grid aspect-[4/5] grid-cols-2 grid-rows-2 gap-3 overflow-hidden rounded-2xl shadow-elevated lg:grid-cols-[58fr_42fr] lg:grid-rows-3">
             {TILES.map((t, i) => (
-              <figure
+              <Link
                 key={t.label}
-                className={`group relative overflow-hidden rounded-xl bg-muted ${i === 0 ? "lg:row-span-3" : ""}`}
+                to={t.to}
+                hash={"hash" in t ? t.hash : undefined}
+                className={`group relative block overflow-hidden rounded-xl bg-muted ${i === 0 ? "lg:row-span-3" : ""}`}
               >
-                <img
-                  src={t.src}
-                  alt={t.alt}
-                  loading={i === 0 ? "eager" : "lazy"}
-                  fetchPriority={i === 0 ? "high" : "auto"}
-                  decoding="async"
-                  className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 motion-safe:lg:group-hover:scale-[1.02] ${t.pos}`}
-                />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/65 to-transparent" />
-                <figcaption className="absolute bottom-2 left-2 whitespace-nowrap text-[9.5px] font-semibold uppercase tracking-wide sm:left-2.5 sm:tracking-wider text-white sm:text-xs">
-                  {t.label}
-                </figcaption>
-              </figure>
+                <figure className="absolute inset-0">
+                  <img
+                    src={t.src}
+                    alt={t.alt}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    fetchPriority={i === 0 ? "high" : "auto"}
+                    decoding="async"
+                    className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 motion-safe:lg:group-hover:scale-[1.02] ${t.pos}`}
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/65 to-transparent" />
+                  <figcaption className="absolute bottom-2 left-2 right-2 text-[10px] font-semibold uppercase leading-snug tracking-wide text-white sm:left-2.5 sm:right-2.5 sm:tracking-wider sm:text-xs">
+                    {t.label}
+                  </figcaption>
+                </figure>
+              </Link>
             ))}
           </div>
         </div>
