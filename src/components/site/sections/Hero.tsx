@@ -4,28 +4,34 @@ import { photos } from "@/assets/photos";
 
 const TILES = [
   {
-    label: "Personal Training",
+    label: "Return-to-Activity Training",
     src: photos.heroPersonalTraining,
     pos: "object-[60%_30%]",
     alt: "Trainer demonstrating a medicine ball movement to an adult client",
+    to: "/services" as const,
+    hash: "post-rehab",
   },
   {
-    label: "Athletic Performance",
-    src: photos.performanceGroupDemonstration,
-    pos: "object-[50%_35%]",
-    alt: "Trainer demonstrating a drill to a group of young athletes",
+    label: "Functional Strength & Mobility",
+    src: photos.heroIndividualized,
+    pos: "object-[55%_38%]",
+    alt: "Trainer guiding a pregnant client through a banded lunge step",
+    to: "/services" as const,
+    hash: "personal-training",
   },
   {
     label: "Active Aging",
     src: photos.heroActiveAging,
     pos: "object-[45%_30%]",
     alt: "Older adult performing a resistance band row while the trainer observes",
+    to: "/services" as const,
   },
   {
-    label: "Individualized Coaching",
-    src: photos.heroIndividualized,
-    pos: "object-[55%_38%]",
-    alt: "Trainer guiding a pregnant client through a banded lunge step",
+    label: "Athletic Performance",
+    src: photos.performanceGroupDemonstration,
+    pos: "object-[50%_35%]",
+    alt: "Trainer demonstrating a drill to a group of young athletes",
+    to: "/fit-beyond-performance" as const,
   },
 ];
 
