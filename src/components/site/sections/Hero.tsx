@@ -63,58 +63,19 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8 lg:py-24">
-        <div className="text-center lg:col-span-6 lg:text-left">
+        <div className="text-center lg:col-span-6">
           <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
-            The first thing we identify is{" "}
-            <span className="mx-auto block w-full max-w-md sm:max-w-lg lg:mx-0 lg:max-w-xl">
-              <span className="block text-5xl font-extrabold tracking-tight text-primary sm:text-6xl lg:text-7xl">
-                <span className="text-[0.8em] font-bold text-primary/70">“</span>
-                THE GAP
-                <span className="text-[0.8em] font-bold text-primary/70">”</span>
-              </span>
-
-              {/* The gap indicator — sized to the headline so the arrow drops into its center */}
-              <span
-                aria-hidden="true"
-                className="mt-3 flex justify-center text-primary"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-7 w-7 sm:h-8 sm:w-8"
-                >
-                  <path d="M12 4v14" />
-                  <path d="m6 13 6 6 6-6" />
-                </svg>
-              </span>
-              <span aria-hidden="true" className="mt-1.5 flex items-center gap-2 sm:gap-3">
-                <span className="h-2 w-2 shrink-0 rotate-45 rounded-[2px] bg-accent" />
-                <span className="h-1 flex-1 rounded-full bg-primary/75" />
-                <span className="w-14 shrink-0 sm:w-20" />
-                <span className="h-1 flex-1 rounded-full bg-primary/75" />
-                <span className="h-2 w-2 shrink-0 rotate-45 rounded-[2px] bg-accent" />
-              </span>
-              <span className="mt-3 hidden items-baseline justify-between gap-6 text-[11px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground lg:flex">
-                <span className="whitespace-nowrap">Where are you?</span>
-                <span className="whitespace-nowrap">Where do you want to go?</span>
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              className="mx-auto mt-3 grid w-full grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)] items-baseline text-[10px] font-semibold uppercase leading-tight tracking-wide text-muted-foreground sm:grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)] sm:text-[11px] lg:hidden"
-            >
-              <span className="text-center text-balance">Where are you?</span>
-              <span />
-              <span className="text-center text-balance">Where do you want to go?</span>
-            </span>
+            <span className="block">MOVE BETTER.</span>
+            <span className="block">BUILD LASTING STRENGTH.</span>
+            <span className="block text-primary">PERFORM AT THEIR BEST.</span>
           </h1>
 
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            Through functional training, proper technique, mobility, and
+            recovery—whether in everyday life, the gym, or athletic competition.
+          </p>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent-hover"
