@@ -85,6 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "FIT Beyond Therapy" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "google-site-verification", content: "BnGwBJgaMq5idE9fNl1uncnnjvHjnGeevCTDq9nTCYc" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
