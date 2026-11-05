@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { submitContactLead } from "@/lib/leads";
@@ -15,6 +16,7 @@ const schema = z.object({
 });
 
 export function ContactForm() {
+  const submitLead = useServerFn(submitContactLead);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -44,7 +46,7 @@ export function ContactForm() {
     setErrors({});
     setStatus("submitting");
     try {
-      await submitContactLead({ data: parsed.data });
+      await submitLead({ data: parsed.data });
       setStatus("sent");
       form.reset();
     } catch (err) {
