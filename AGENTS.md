@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Photo-bearing site components accept optional image focal-position classes so crop-sensitive subjects remain visible without changing section layouts.
+- Public inquiry handlers validate and save to private `leads` before emailing; visitors have no database read access, and notification failures must not lose saved inquiries.

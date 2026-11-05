@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { submitAthleteInquiry } from "@/lib/leads";
@@ -12,6 +13,7 @@ const schema = z.object({
 });
 
 export function AthleteInquiryForm() {
+  const submitInquiry = useServerFn(submitAthleteInquiry);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -38,7 +40,7 @@ export function AthleteInquiryForm() {
     setErrors({});
     setStatus("submitting");
     try {
-      await submitAthleteInquiry({ data: parsed.data });
+      await submitInquiry({ data: parsed.data });
       setStatus("sent");
       form.reset();
     } catch (err) {

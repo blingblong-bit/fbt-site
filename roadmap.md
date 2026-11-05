@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Save contact and athlete forms privately in leads while preserving owner emails; verify both forms, stored data, and email events, then remove test rows.
+
 - [x] Update site copy and page metadata around Philip's background and FIT's purpose without changing design or functionality.
 - [x] Verify rendered pages, preserved reviews, links, and existing checks (changed-file lint and build passed; full-project lint has unrelated existing failures).
 
