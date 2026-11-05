@@ -1,4 +1,5 @@
-import { describe, expect, test } from "bun:test";
+import { describe, test } from "node:test";
+import assert from "node:assert/strict";
 import { persistAndNotifyLead } from "./lead-delivery";
 
 describe("saved form inquiries", () => {
@@ -10,7 +11,7 @@ describe("saved form inquiries", () => {
         notify: async (id) => { actions.push(`notify-${id}`); return { sent: true }; },
         recordStatus: async (id, status) => { actions.push(`${id}-${status}`); },
       });
-      expect(actions).toEqual([`save-${form}`, "notify-lead-id", "lead-id-sent"]);
+      assert.deepEqual(actions, [`save-${form}`, "notify-lead-id", "lead-id-sent"]);
     });
   }
   test("email failure still acknowledges the saved inquiry", async () => {
@@ -20,17 +21,17 @@ describe("saved form inquiries", () => {
       notify: async () => { throw new Error("Email unavailable"); },
       recordStatus: async (id, status) => { recorded = `${id}-${status}`; },
     });
-    expect(result.ok).toBe(true);
-    expect(recorded).toBe("saved-id-failed");
+    assert.equal(result.ok, true);
+    assert.equal(recorded, "saved-id-failed");
   });
   test("failed storage does not send or acknowledge an unsaved inquiry", async () => {
     let notified = false;
-    await expect(persistAndNotifyLead({
+    await assert.rejects(persistAndNotifyLead({
       save: async () => { throw new Error("Storage unavailable"); },
       notify: async () => { notified = true; return { sent: true }; },
       recordStatus: async () => {},
-    })).rejects.toThrow("Storage unavailable");
-    expect(notified).toBe(false);
+    }), /Storage unavailable/);
+    assert.equal(notified, false);
   });
   test("suppressed notifications are not recorded as sent", async () => {
     let recorded = "";
@@ -39,6 +40,6 @@ describe("saved form inquiries", () => {
       notify: async () => ({ sent: false }),
       recordStatus: async (_id, status) => { recorded = status; },
     });
-    expect(recorded).toBe("suppressed");
+    assert.equal(recorded, "suppressed");
   });
 });
