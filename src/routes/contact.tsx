@@ -13,18 +13,12 @@ import { ContactForm } from "@/components/site/ContactForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact FIT Beyond Therapy | Tullahoma, TN" },
-      {
-        name: "description",
-        content:
-          "Talk with the FIT team in Tullahoma, TN about post-rehab training, personal training, active aging, or athletic performance. Share your goals and starting point.",
-      },
-      { property: "og:title", content: "Contact FIT Beyond Therapy | Tullahoma, TN" },
-      {
-        property: "og:description",
-        content:
-          "Talk with the FIT team in Tullahoma, TN about post-rehab training, personal training, active aging, or athletic performance. Share your goals and starting point.",
-      },
+      { title: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
+      { name: "description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
+      { property: "og:title", content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
+      { property: "og:description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
+      { name: "twitter:title", content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
+      { name: "twitter:description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
       { property: "og:url", content: absoluteUrl("/contact") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

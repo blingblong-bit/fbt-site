@@ -7,18 +7,12 @@ import { FAQ } from "@/components/site/sections/FAQ";
 export const Route = createFileRoute("/forcedecks")({
   head: () => ({
     meta: [
-      { title: "ForceDecks Testing | FIT Beyond Therapy | Tullahoma, TN" },
-      {
-        name: "description",
-        content:
-          "ForceDecks force plate testing in Tullahoma, TN provides objective information about force, balance, and power when it can inform individualized training.",
-      },
-      { property: "og:title", content: "ForceDecks Testing | FIT Beyond Therapy | Tullahoma, TN" },
-      {
-        property: "og:description",
-        content:
-          "ForceDecks force plate testing in Tullahoma, TN provides objective information about force, balance, and power when it can inform individualized training.",
-      },
+      { title: "ForceDecks Performance Testing & Assessment | Tullahoma, TN" },
+      { name: "description", content: "ForceDecks testing at FIT Beyond Therapy in Tullahoma provides objective strength, force, and power assessment to inform training and track progress." },
+      { property: "og:title", content: "ForceDecks Performance Testing & Assessment | Tullahoma, TN" },
+      { property: "og:description", content: "ForceDecks testing at FIT Beyond Therapy in Tullahoma provides objective strength, force, and power assessment to inform training and track progress." },
+      { name: "twitter:title", content: "ForceDecks Performance Testing & Assessment | Tullahoma, TN" },
+      { name: "twitter:description", content: "ForceDecks testing at FIT Beyond Therapy in Tullahoma provides objective strength, force, and power assessment to inform training and track progress." },
       { property: "og:url", content: absoluteUrl("/forcedecks") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

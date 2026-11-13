@@ -7,21 +7,12 @@ import { PersonalTraining } from "@/components/site/sections/PersonalTraining";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Post-Rehab & Personal Training | FIT Beyond Therapy | Tullahoma, TN" },
-      {
-        name: "description",
-        content:
-          "Strength and movement training for life, work, recreation, and sport. Explore post-rehab training, personal training, active aging, and athletic performance in Tullahoma, TN.",
-      },
-      {
-        property: "og:title",
-        content: "Post-Rehab & Personal Training | FIT Beyond Therapy | Tullahoma, TN",
-      },
-      {
-        property: "og:description",
-        content:
-          "Strength and movement training for life, work, recreation, and sport. Explore post-rehab training, personal training, active aging, and athletic performance in Tullahoma, TN.",
-      },
+      { title: "Post-Rehab, Functional Strength & Mobility | FIT Beyond Therapy | Tullahoma, TN" },
+      { name: "description", content: "Explore post-rehab and return-to-activity training, functional strength, mobility, and active-aging support at FIT Beyond Therapy in Tullahoma, TN." },
+      { property: "og:title", content: "Post-Rehab, Functional Strength & Mobility | FIT Beyond Therapy | Tullahoma, TN" },
+      { property: "og:description", content: "Explore post-rehab and return-to-activity training, functional strength, mobility, and active-aging support at FIT Beyond Therapy in Tullahoma, TN." },
+      { name: "twitter:title", content: "Post-Rehab, Functional Strength & Mobility | FIT Beyond Therapy | Tullahoma, TN" },
+      { name: "twitter:description", content: "Explore post-rehab and return-to-activity training, functional strength, mobility, and active-aging support at FIT Beyond Therapy in Tullahoma, TN." },
       { property: "og:url", content: absoluteUrl("/services") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
