@@ -21,25 +21,31 @@ import { photos } from "@/assets/photos";
 export const Route = createFileRoute("/fit-beyond-performance")({
   head: () => ({
     meta: [
-      { title: "FIT Beyond Performance | Athletic Performance Training | Tullahoma, TN" },
+      { title: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN" },
       {
         name: "description",
         content:
-          "Individual, small-group, and team athletic performance training for middle-school, high-school, college, and professional athletes in Tullahoma, TN.",
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
       },
       {
         property: "og:title",
-        content: "FIT Beyond Performance | Athletic Performance Training | Tullahoma, TN",
+        content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN",
       },
       {
         property: "og:description",
         content:
-          "Individual, small-group, and team athletic performance training for middle-school, high-school, college, and professional athletes in Tullahoma, TN.",
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
       },
       {
-        property: "og:url",
-        content: absoluteUrl("/fit-beyond-performance"),
+        name: "twitter:title",
+        content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN",
       },
+      {
+        name: "twitter:description",
+        content:
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
+      },
+      { property: "og:url", content: absoluteUrl("/fit-beyond-performance") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: absoluteUrl("/og-image.png") },

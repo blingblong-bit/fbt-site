@@ -13,3 +13,5 @@
 - [x] Center the hero title treatment, badge, and buttons on phone widths; keep desktop left-aligned.
 - [x] Remove the "Individualized Training in Tullahoma, TN" pill from the hero; keep headline aligned with the photo grid.
 - [x] Put the two hero questions on opposite sides of the gap at phone widths; keep desktop as before.
+
+- [x] Update six public pages’ SEO metadata only; SSR metadata, crawl rules, six-route sitemap, and www redirects verified; targeted lint and automatic build passed; not published.
