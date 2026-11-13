@@ -14,4 +14,4 @@
 - [x] Remove the "Individualized Training in Tullahoma, TN" pill from the hero; keep headline aligned with the photo grid.
 - [x] Put the two hero questions on opposite sides of the gap at phone widths; keep desktop as before.
 
-- [ ] Update six public pages’ SEO metadata only; verify crawl settings, sitemap, canonicalization, and existing checks without publishing.
+- [x] Update six public pages’ SEO metadata only; SSR metadata, crawl rules, six-route sitemap, and www redirects verified; targeted lint and automatic build passed; not published.
