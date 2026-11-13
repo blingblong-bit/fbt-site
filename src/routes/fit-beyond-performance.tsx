@@ -22,11 +22,29 @@ export const Route = createFileRoute("/fit-beyond-performance")({
   head: () => ({
     meta: [
       { title: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN" },
-      { name: "description", content: "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN." },
-      { property: "og:title", content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN" },
-      { property: "og:description", content: "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN." },
-      { name: "twitter:title", content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN" },
-      { name: "twitter:description", content: "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN." },
+      {
+        name: "description",
+        content:
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
+      },
+      {
+        property: "og:title",
+        content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN",
+      },
+      {
+        property: "og:description",
+        content:
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
+      },
+      {
+        name: "twitter:title",
+        content: "Youth & Adult Athletic Performance | FIT Beyond Performance | Tullahoma, TN",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Build speed, power, and strength with individual, small-group, and team athletic performance training for youth and adult athletes in Tullahoma, TN.",
+      },
       { property: "og:url", content: absoluteUrl("/fit-beyond-performance") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

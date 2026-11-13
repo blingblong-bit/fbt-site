@@ -14,11 +14,29 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
-      { name: "description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
-      { property: "og:title", content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
-      { property: "og:description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
-      { name: "twitter:title", content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN" },
-      { name: "twitter:description", content: "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance." },
+      {
+        name: "description",
+        content:
+          "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance.",
+      },
+      {
+        property: "og:title",
+        content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN",
+      },
+      {
+        property: "og:description",
+        content:
+          "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance.",
+      },
+      {
+        name: "twitter:title",
+        content: "Schedule a Consultation | FIT Beyond Therapy | Tullahoma, TN",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Schedule a consultation with FIT Beyond Therapy in Tullahoma, TN to discuss post-rehab training, personal training, active aging, or athletic performance.",
+      },
       { property: "og:url", content: absoluteUrl("/contact") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

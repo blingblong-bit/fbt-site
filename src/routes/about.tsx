@@ -8,11 +8,29 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Philip Hill & FIT’s Training Approach | FIT Beyond Therapy | Tullahoma, TN" },
-      { name: "description", content: "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma." },
-      { property: "og:title", content: "Philip Hill & FIT’s Training Approach | FIT Beyond Therapy | Tullahoma, TN" },
-      { property: "og:description", content: "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma." },
-      { name: "twitter:title", content: "Philip Hill & FIT’s Training Approach | FIT Beyond Therapy | Tullahoma, TN" },
-      { name: "twitter:description", content: "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma." },
+      {
+        name: "description",
+        content:
+          "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma.",
+      },
+      {
+        property: "og:title",
+        content: "Philip Hill & FIT’s Training Approach | FIT Beyond Therapy | Tullahoma, TN",
+      },
+      {
+        property: "og:description",
+        content:
+          "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma.",
+      },
+      {
+        name: "twitter:title",
+        content: "Philip Hill & FIT’s Training Approach | FIT Beyond Therapy | Tullahoma, TN",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Meet Philip Hill and learn how his rehabilitation experience shaped FIT Beyond Therapy’s approach to bridging the gap to fitness and performance in Tullahoma.",
+      },
       { property: "og:url", content: absoluteUrl("/about") },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
