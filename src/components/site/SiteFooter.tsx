@@ -87,8 +87,11 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/60">
-          © {new Date().getFullYear()} FIT Beyond Therapy. All rights reserved.
+        <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/60">
+          <span>© {new Date().getFullYear()} FIT Beyond Therapy. All rights reserved.</span>
+          <Link to="/privacy" className="hover:text-accent">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
