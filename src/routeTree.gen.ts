@@ -15,6 +15,7 @@ import { Route as AthleticPerformanceRouteImport } from './routes/athletic-perfo
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FitBeyondPerformanceRouteImport } from './routes/fit-beyond-performance'
 import { Route as ForcedecksRouteImport } from './routes/forcedecks'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
@@ -49,6 +50,11 @@ const ForcedecksRoute = ForcedecksRouteImport.update({
   path: '/forcedecks',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/fit-beyond-performance': typeof FitBeyondPerformanceRoute
   '/forcedecks': typeof ForcedecksRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fit-beyond-performance'
     | '/forcedecks'
+    | '/privacy'
     | '/services'
     | '/sitemap.xml'
     | '/lovable/email/transactional/preview'
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fit-beyond-performance'
     | '/forcedecks'
+    | '/privacy'
     | '/services'
     | '/sitemap.xml'
     | '/lovable/email/transactional/preview'
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/fit-beyond-performance'
     | '/forcedecks'
+    | '/privacy'
     | '/services'
     | '/sitemap.xml'
     | '/lovable/email/transactional/preview'
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FitBeyondPerformanceRoute: typeof FitBeyondPerformanceRoute
   ForcedecksRoute: typeof ForcedecksRoute
+  PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
@@ -192,6 +205,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ForcedecksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FitBeyondPerformanceRoute: FitBeyondPerformanceRoute,
   ForcedecksRoute: ForcedecksRoute,
+  PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
